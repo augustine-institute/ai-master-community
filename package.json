@@ -48,8 +48,17 @@
     "yarn": "^0.27.5"
   },
   "dependencies": {
+    "build": "tsc -p .",
     "selenium-server-standalone": "^2.53.1",
     "sinon": "^4.3.0",
-    "build": "tsc -p ."
-  }
+    "systemjs-nodelibs": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/augustine-institute/ai-master-community.git"
+  },
+  "bugs": {
+    "url": "https://github.com/augustine-institute/ai-master-community/issues"
+  },
+  "homepage": "https://github.com/augustine-institute/ai-master-community#readme"
 }
