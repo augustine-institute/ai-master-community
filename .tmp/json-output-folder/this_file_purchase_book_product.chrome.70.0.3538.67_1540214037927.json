@@ -1,0 +1,406 @@
+[
+  {
+    "keyword": "Feature",
+    "line": 2,
+    "name": "This file Purchase book product",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Purchase_book"
+      }
+    ],
+    "uri": "D:\\Rajesh\\cucumber\\airoot\\features\\purchasebook.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Purchase book product",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Purchase_book"
+          }
+        ],
+        "id": "this-file-purchase-book-product;purchase-book-product",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I navigate to \"/\"",
+            "result": {
+              "status": "passed",
+              "duration": 28782
+            },
+            "isBackground": true,
+            "line": 6,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "navigate to market page",
+            "result": {
+              "status": "passed",
+              "duration": 45004
+            },
+            "line": 11,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:24"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to read products",
+            "result": {
+              "status": "passed",
+              "duration": 10002
+            },
+            "line": 12,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:275"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "PBP-0010 Read products is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 12080
+            },
+            "line": 13,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1710"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0010 Click on fiction in Read link",
+            "result": {
+              "status": "passed",
+              "duration": 20002
+            },
+            "line": 14,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1720"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "PBP-0020 Click on product",
+            "result": {
+              "status": "passed",
+              "duration": 15000
+            },
+            "line": 15,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1725"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0020 Read product and Add to cart button is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 8045
+            },
+            "line": 16,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1730"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "PBP-0030 click on Add to cart button",
+            "result": {
+              "status": "passed",
+              "duration": 15001
+            },
+            "line": 17,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1736"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "PBP-0040 Click on incart button",
+            "result": {
+              "status": "passed",
+              "duration": 5001
+            },
+            "line": 18,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1748"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "PBP-0060 click on title",
+            "result": {
+              "status": "passed",
+              "duration": 28018
+            },
+            "line": 19,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:334"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "PBP-0050 click on product in you may also like",
+            "result": {
+              "status": "passed",
+              "duration": 35001
+            },
+            "line": 20,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:351"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on Add to cart",
+            "result": {
+              "status": "passed",
+              "duration": 20003
+            },
+            "line": 21,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:316"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "PBP-0050 cart icon button is increased by 1",
+            "result": {
+              "status": "passed",
+              "duration": 10022
+            },
+            "line": 22,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1754"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "CPS-0030 i click on get credits plan",
+            "result": {
+              "status": "passed",
+              "duration": 10000
+            },
+            "line": 23,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:724"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "CPS-0030 get credits plan link is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 10029
+            },
+            "line": 24,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:728"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "PBP-0060 click on incart icon",
+            "result": {
+              "status": "passed",
+              "duration": 11000
+            },
+            "line": 25,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:321"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "PBP-0060 click on remove option",
+            "result": {
+              "status": "passed",
+              "duration": 15001
+            },
+            "line": 26,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:356"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "PBP-0060 Click on checkout option",
+            "result": {
+              "status": "passed",
+              "duration": 25001
+            },
+            "line": 27,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:366"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "PBP-0070 Click on create account",
+            "result": {
+              "status": "passed",
+              "duration": 30002
+            },
+            "line": 28,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:378"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Enter Details in create Account",
+            "result": {
+              "status": "passed",
+              "duration": 53006
+            },
+            "line": 29,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:383"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Enter Billing information",
+            "result": {
+              "status": "passed",
+              "duration": 38004
+            },
+            "line": 30,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:405"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Enter Payment Method",
+            "result": {
+              "status": "passed",
+              "duration": 24003
+            },
+            "line": 31,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:439"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Verify the Checkout Page",
+            "result": {
+              "status": "passed",
+              "duration": 45032
+            },
+            "line": 32,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:465"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Order Confirmation is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 50040
+            },
+            "line": 33,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:479"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Click on purchase product in library page",
+            "result": {
+              "status": "passed",
+              "duration": 18031
+            },
+            "line": 34,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:473"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 View in library is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 15029
+            },
+            "line": 35,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:499"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "click on logout button",
+            "result": {
+              "status": "passed",
+              "duration": 23032
+            },
+            "line": 36,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:247"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "hidden": true,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\support\\hooks.ts:30"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "this-file-purchase-book-product",
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "70.0.3538.67"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]

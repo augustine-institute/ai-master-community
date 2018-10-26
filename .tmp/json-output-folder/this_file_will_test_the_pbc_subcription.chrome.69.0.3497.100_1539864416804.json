@@ -1,0 +1,238 @@
+[
+  {
+    "description": "  As a user of FORMED, I should be able to go to the homepage and\n  assert that all the elements are there",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "This file will test the Pbc Subcription",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@PBC_subscription"
+      }
+    ],
+    "uri": "D:\\Rajesh\\cucumber\\airoot\\features\\Setup_Pbc_Subscription.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "SetUp Pbc Subscription",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@PBC_subscription"
+          }
+        ],
+        "id": "this-file-will-test-the-pbc-subcription;setup-pbc-subscription",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I navigate to \"/\"",
+            "result": {
+              "status": "passed",
+              "duration": 27891
+            },
+            "isBackground": true,
+            "line": 7,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "navigate to market page",
+            "result": {
+              "status": "passed",
+              "duration": 45002
+            },
+            "line": 11,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:24"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to subscription products",
+            "result": {
+              "status": "passed",
+              "duration": 10002
+            },
+            "line": 12,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:246"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "click on ondemand subscription",
+            "result": {
+              "status": "passed",
+              "duration": 23001
+            },
+            "line": 13,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1206"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "VR-0020 sign in group detail is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 21061
+            },
+            "line": 14,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1212"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "VR-0020 click on checkout button",
+            "result": {
+              "status": "passed",
+              "duration": 23003
+            },
+            "line": 15,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1224"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "VR-0020 Click on the create an account",
+            "result": {
+              "status": "passed",
+              "duration": 33031
+            },
+            "line": 16,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:554"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Enter Details in create Account",
+            "result": {
+              "status": "passed",
+              "duration": 53004
+            },
+            "line": 17,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:349"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Enter Billing information",
+            "result": {
+              "status": "passed",
+              "duration": 38005
+            },
+            "line": 18,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:371"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "PBC-0010 click on pay by check",
+            "result": {
+              "status": "passed",
+              "duration": 15001
+            },
+            "line": 19,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1230"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBC-0020 Enter Purchase Order",
+            "result": {
+              "status": "passed",
+              "duration": 15002
+            },
+            "line": 20,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:525"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "Click on Choose organization",
+            "result": {
+              "status": "passed",
+              "duration": 62003
+            },
+            "line": 21,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1505"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "VR-0040 Place Order button is displayed and click on place order button",
+            "result": {
+              "status": "passed",
+              "duration": 32023
+            },
+            "line": 22,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1393"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "PBC-0030 order conformation is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 4044
+            },
+            "line": 23,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1270"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "hidden": true,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\support\\hooks.ts:30"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "this-file-will-test-the-pbc-subcription",
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "69.0.3497.100"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]

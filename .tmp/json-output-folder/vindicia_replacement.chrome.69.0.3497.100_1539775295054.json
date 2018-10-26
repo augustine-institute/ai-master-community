@@ -1,0 +1,433 @@
+[
+  {
+    "description": "  As a user of FORMED, I should be able to go to the homepage and\n  assert that all the elements are there",
+    "keyword": "Feature",
+    "line": 3,
+    "name": "Vindicia Replacement",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@Vindicia_Replacement"
+      }
+    ],
+    "uri": "D:\\Rajesh\\cucumber\\airoot\\features\\Vindicia Replacement.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Vindicia Replacement",
+        "tags": [
+          {
+            "line": 2,
+            "name": "@Vindicia_Replacement"
+          }
+        ],
+        "id": "vindicia-replacement;vindicia-replacement",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I navigate to \"/\"",
+            "result": {
+              "status": "passed",
+              "duration": 29918
+            },
+            "isBackground": true,
+            "line": 8,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "VR-0010 entercode,getfreetrail,sign up group is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 30071
+            },
+            "line": 13,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1313"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "VR-0010 click on Sign up group",
+            "result": {
+              "status": "passed",
+              "duration": 10002
+            },
+            "line": 14,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1322"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "VR-0020 sign in group detail is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 21067
+            },
+            "line": 15,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1212"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "VR-0020 click on checkout button",
+            "result": {
+              "status": "passed",
+              "duration": 23002
+            },
+            "line": 16,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1224"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "VR-0020 Click on the create an account",
+            "result": {
+              "status": "passed",
+              "duration": 33030
+            },
+            "line": 17,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:554"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Enter Details in create Account",
+            "result": {
+              "status": "passed",
+              "duration": 53006
+            },
+            "line": 18,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:349"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Enter Billing information",
+            "result": {
+              "status": "passed",
+              "duration": 38001
+            },
+            "line": 19,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:371"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "VR-0030 Enter Payment Method",
+            "result": {
+              "status": "passed",
+              "duration": 9005
+            },
+            "line": 20,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1346"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "VR-0030 Choose organization",
+            "result": {
+              "status": "passed",
+              "duration": 47003
+            },
+            "line": 21,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1471"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "VR-0050 click on Entercupon",
+            "result": {
+              "status": "passed",
+              "duration": 10021
+            },
+            "line": 22,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1456"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "VR-0040 Place Order button is displayed and click on place order button",
+            "result": {
+              "status": "passed",
+              "duration": 32018
+            },
+            "line": 23,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1393"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "VR-0050 order conformation is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 19044
+            },
+            "line": 24,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1498"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "VR-0060 Enter organization information",
+            "result": {
+              "status": "passed",
+              "duration": 46003
+            },
+            "line": 25,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1507"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "VR-0060 Leader checklist is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 18074
+            },
+            "line": 26,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1521"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "VR-0070 Subscription information is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 33038
+            },
+            "line": 27,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1535"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I navigate to \"/\"",
+            "result": {
+              "status": "passed",
+              "duration": 18867
+            },
+            "line": 28,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "navigate to market page",
+            "result": {
+              "status": "passed",
+              "duration": 45001
+            },
+            "line": 29,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:24"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to subscription products",
+            "result": {
+              "status": "passed",
+              "duration": 10001
+            },
+            "line": 30,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:246"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "VR-0080 click on ondemand subscription",
+            "result": {
+              "status": "passed",
+              "duration": 18001
+            },
+            "line": 31,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1546"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "VR-0090 sign in group detail is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 12024
+            },
+            "line": 32,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1552"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "VR-0020 click on checkout button",
+            "result": {
+              "status": "passed",
+              "duration": 23001
+            },
+            "line": 33,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1224"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "VR-0020 Click on the create an account",
+            "result": {
+              "status": "passed",
+              "duration": 33025
+            },
+            "line": 34,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:554"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Enter Details in create Account",
+            "result": {
+              "status": "passed",
+              "duration": 53003
+            },
+            "line": 35,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:349"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Enter Billing information",
+            "result": {
+              "status": "passed",
+              "duration": 38005
+            },
+            "line": 36,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:371"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "VR-0030 Enter Payment Method",
+            "result": {
+              "status": "passed",
+              "duration": 9004
+            },
+            "line": 37,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1346"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "VR-0050 click on Entercupon",
+            "result": {
+              "status": "passed",
+              "duration": 10022
+            },
+            "line": 38,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1456"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "CO-0080 Click on place Order",
+            "result": {
+              "status": "passed",
+              "duration": 35004
+            },
+            "line": 39,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:650"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "VR-0130 order conformation is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 19040
+            },
+            "line": 40,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1591"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "hidden": true,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\support\\hooks.ts:30"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "vindicia-replacement",
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "69.0.3497.100"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]

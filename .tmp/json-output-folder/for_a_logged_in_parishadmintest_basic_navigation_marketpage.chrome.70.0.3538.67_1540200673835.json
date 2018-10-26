@@ -1,0 +1,472 @@
+[
+  {
+    "description": "  As a user of FORMED, I should be able to go to the homepage and\n  assert that all the elements are there",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "For a Logged in ParishAdmin-Test Basic Navigation Marketpage",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@ParishAdmin-Test_Basic_Navigation_Marketpage"
+      }
+    ],
+    "uri": "D:\\Rajesh\\cucumber\\airoot\\features\\For_a_Logged_in_ParishAdmin-Test_Basic_Navigation_Marketpage.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "For a Logged in ParishAdmin-Test Basic Navigation Marketpage",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@ParishAdmin-Test_Basic_Navigation_Marketpage"
+          }
+        ],
+        "id": "for-a-logged-in-parishadmin-test-basic-navigation-marketpage;for-a-logged-in-parishadmin-test-basic-navigation-marketpage",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I navigate to \"/\"",
+            "result": {
+              "status": "passed",
+              "duration": 25756
+            },
+            "isBackground": true,
+            "line": 7,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "LLP-0020 Click on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 25004
+            },
+            "line": 12,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2320"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "LPA-0010 Enter Parish Admin Name and password",
+            "result": {
+              "status": "passed",
+              "duration": 41002
+            },
+            "line": 13,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2056"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "navigate to market page",
+            "result": {
+              "status": "passed",
+              "duration": 45001
+            },
+            "line": 14,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:24"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to watch products",
+            "result": {
+              "status": "passed",
+              "duration": 10001
+            },
+            "line": 15,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:265"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "click on feature film link and verify",
+            "result": {
+              "status": "passed",
+              "duration": 27027
+            },
+            "line": 16,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2333"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to read products",
+            "result": {
+              "status": "passed",
+              "duration": 10000
+            },
+            "line": 17,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:275"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on nonfiction link and verify",
+            "result": {
+              "status": "passed",
+              "duration": 27022
+            },
+            "line": 18,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2397"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to watch products",
+            "result": {
+              "status": "passed",
+              "duration": 9999
+            },
+            "line": 19,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:265"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "click on Talks link and verify",
+            "result": {
+              "status": "passed",
+              "duration": 27027
+            },
+            "line": 20,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2348"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to read products",
+            "result": {
+              "status": "passed",
+              "duration": 10001
+            },
+            "line": 21,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:275"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on fiction link and verify",
+            "result": {
+              "status": "passed",
+              "duration": 27016
+            },
+            "line": 22,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2404"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to watch products",
+            "result": {
+              "status": "passed",
+              "duration": 10001
+            },
+            "line": 23,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:265"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "click on Tv shows link and verify",
+            "result": {
+              "status": "passed",
+              "duration": 27021
+            },
+            "line": 24,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2355"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to read products",
+            "result": {
+              "status": "passed",
+              "duration": 10001
+            },
+            "line": 25,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:275"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on youth link and verify",
+            "result": {
+              "status": "passed",
+              "duration": 27042
+            },
+            "line": 26,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2411"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to watch products",
+            "result": {
+              "status": "passed",
+              "duration": 10001
+            },
+            "line": 27,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:265"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "click on Espamol in watch link and verify",
+            "result": {
+              "status": "passed",
+              "duration": 27023
+            },
+            "line": 28,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2362"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to listen products",
+            "result": {
+              "status": "passed",
+              "duration": 10001
+            },
+            "line": 29,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:270"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on talks Link and Verify",
+            "result": {
+              "status": "passed",
+              "duration": 27023
+            },
+            "line": 30,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2369"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to read products",
+            "result": {
+              "status": "passed",
+              "duration": 10003
+            },
+            "line": 31,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:275"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on espanol link and verify",
+            "result": {
+              "status": "passed",
+              "duration": 22022
+            },
+            "line": 32,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2418"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to listen products",
+            "result": {
+              "status": "passed",
+              "duration": 10001
+            },
+            "line": 33,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:270"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on audio dramas Link and Verify",
+            "result": {
+              "status": "passed",
+              "duration": 23022
+            },
+            "line": 34,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2376"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to listen products",
+            "result": {
+              "status": "passed",
+              "duration": 10000
+            },
+            "line": 35,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:270"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on audiobooks Link and Verify",
+            "result": {
+              "status": "passed",
+              "duration": 22021
+            },
+            "line": 36,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2384"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to listen products",
+            "result": {
+              "status": "passed",
+              "duration": 10001
+            },
+            "line": 37,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:270"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on espanol Listen Link and Verify",
+            "result": {
+              "status": "passed",
+              "duration": 27022
+            },
+            "line": 38,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2390"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on read Link and Verify",
+            "result": {
+              "status": "passed",
+              "duration": 17020
+            },
+            "line": 39,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2438"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on Listen Link and Verify",
+            "result": {
+              "status": "passed",
+              "duration": 12017
+            },
+            "line": 40,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2431"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on watch Link and Verify",
+            "result": {
+              "status": "passed",
+              "duration": 22015
+            },
+            "line": 41,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2424"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "i click on account and logout for parish in market page",
+            "result": {
+              "status": "passed",
+              "duration": 14002
+            },
+            "line": 42,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2306"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "result": {
+              "status": "passed",
+              "duration": 1
+            },
+            "hidden": true,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\support\\hooks.ts:30"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "for-a-logged-in-parishadmin-test-basic-navigation-marketpage",
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "70.0.3538.67"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]

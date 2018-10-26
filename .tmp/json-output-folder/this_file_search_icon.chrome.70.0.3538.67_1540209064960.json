@@ -1,0 +1,276 @@
+[
+  {
+    "keyword": "Feature",
+    "line": 2,
+    "name": "This file search icon",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Search_page"
+      }
+    ],
+    "uri": "D:\\Rajesh\\cucumber\\airoot\\features\\searchpage.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Purchase search product Page",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Search_page"
+          }
+        ],
+        "id": "this-file-search-icon;purchase-search-product-page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I navigate to \"/\"",
+            "result": {
+              "status": "passed",
+              "duration": 27638
+            },
+            "isBackground": true,
+            "line": 6,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "navigate to market page",
+            "result": {
+              "status": "passed",
+              "duration": 45005
+            },
+            "line": 10,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:24"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "SPP-0020 click on the search icon",
+            "result": {
+              "status": "passed",
+              "duration": 19002
+            },
+            "line": 11,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1765"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "SPP-0030 Search product page is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 6047
+            },
+            "line": 12,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1773"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "SPP-0040 click on watch in left side view",
+            "result": {
+              "status": "passed",
+              "duration": 20002
+            },
+            "line": 13,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1781"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "SPP-0040 Watch sub options are displayed",
+            "result": {
+              "status": "passed",
+              "duration": 14082
+            },
+            "line": 14,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1786"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "SPP-0040 click on Listen in left side view",
+            "result": {
+              "status": "passed",
+              "duration": 15001
+            },
+            "line": 15,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1795"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "SPP-0040 Listen sub options are displayed",
+            "result": {
+              "status": "passed",
+              "duration": 9095
+            },
+            "line": 16,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1799"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "SPP-0040 click on Read in left side view",
+            "result": {
+              "status": "passed",
+              "duration": 20002
+            },
+            "line": 17,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1807"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "SPP-0040 Read sub options are displayed",
+            "result": {
+              "status": "passed",
+              "duration": 9077
+            },
+            "line": 18,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1812"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "SPP-0040 select one or more attribute filter",
+            "result": {
+              "status": "passed",
+              "duration": 20003
+            },
+            "line": 19,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1820"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "SPP-0050 Product details are displayed",
+            "result": {
+              "status": "passed",
+              "duration": 13023
+            },
+            "line": 20,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1830"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to listen products",
+            "result": {
+              "status": "passed",
+              "duration": 10000
+            },
+            "line": 21,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:270"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "SPP-0060 Product page is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 30049
+            },
+            "line": 22,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1836"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "SPP-0070 featured drop down is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 15098
+            },
+            "line": 23,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1847"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "SPP-0080 Click on product",
+            "result": {
+              "status": "passed",
+              "duration": 30001
+            },
+            "line": 24,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1865"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "SPP-0080 is products displayed",
+            "result": {
+              "status": "passed",
+              "duration": 15021
+            },
+            "line": 25,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1860"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "result": {
+              "status": "passed",
+              "duration": 1
+            },
+            "hidden": true,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\support\\hooks.ts:30"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "this-file-search-icon",
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "70.0.3538.67"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]

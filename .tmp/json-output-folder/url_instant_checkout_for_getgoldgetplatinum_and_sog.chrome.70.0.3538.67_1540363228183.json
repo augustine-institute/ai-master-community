@@ -1,0 +1,394 @@
+[
+  {
+    "description": "  As a user of FORMED, I should be able to go to the homepage and\n  assert that all the elements are there",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "URL instant checkout For getgold,getplatinum and SoG",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Instant_Checkout_For_getgold_getplatinum_and_SoG"
+      }
+    ],
+    "uri": "D:\\Rajesh\\cucumber\\airoot\\features\\URL instant checkout For getgold,getplatinum and SoG.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "URL instant checkout For getgold,getplatinum and SoG",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Instant_Checkout_For_getgold_getplatinum_and_SoG"
+          }
+        ],
+        "id": "url-instant-checkout-for-getgold,getplatinum-and-sog;url-instant-checkout-for-getgold,getplatinum-and-sog",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I navigate to \"/\"",
+            "result": {
+              "status": "passed",
+              "duration": 33207
+            },
+            "isBackground": true,
+            "line": 7,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "navigate to market page",
+            "result": {
+              "status": "passed",
+              "duration": 45004
+            },
+            "line": 12,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:24"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "navigate to getgold",
+            "result": {
+              "status": "passed",
+              "duration": 43878
+            },
+            "line": 13,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1905"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "ICO-0010 instant page is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 5045
+            },
+            "line": 14,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1918"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Enter Details in create Account",
+            "result": {
+              "status": "passed",
+              "duration": 53003
+            },
+            "line": 15,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:383"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "ICO-0020 Billing information are displayed in incart",
+            "result": {
+              "status": "passed",
+              "duration": 51004
+            },
+            "line": 16,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1932"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Enter Payment Method",
+            "result": {
+              "status": "passed",
+              "duration": 24007
+            },
+            "line": 17,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:439"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "ICO-0020 Verify the Checkout Page",
+            "result": {
+              "status": "passed",
+              "duration": 32023
+            },
+            "line": 18,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1910"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "getgold order conformation is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 16085
+            },
+            "line": 19,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1980"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "click on logout button",
+            "result": {
+              "status": "passed",
+              "duration": 23033
+            },
+            "line": 20,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:247"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "navigate to getplatinum",
+            "result": {
+              "status": "passed",
+              "duration": 21896
+            },
+            "line": 21,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1900"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "ICO-0010 instant page is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 5045
+            },
+            "line": 22,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1918"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Enter Details in create Account",
+            "result": {
+              "status": "passed",
+              "duration": 53004
+            },
+            "line": 23,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:383"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "ICO-0020 Billing information are displayed in incart",
+            "result": {
+              "status": "passed",
+              "duration": 51002
+            },
+            "line": 24,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1932"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Enter Payment Method",
+            "result": {
+              "status": "passed",
+              "duration": 24006
+            },
+            "line": 25,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:439"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "ICO-0020 Verify the Checkout Page",
+            "result": {
+              "status": "passed",
+              "duration": 32020
+            },
+            "line": 26,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1910"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "getplatinum order conformation is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 16069
+            },
+            "line": 27,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1989"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "click on logout button",
+            "result": {
+              "status": "passed",
+              "duration": 23036
+            },
+            "line": 28,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:247"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "navigate to SoG",
+            "result": {
+              "status": "passed",
+              "duration": 44832
+            },
+            "line": 29,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1885"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "ICO-0010 instant page is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 5040
+            },
+            "line": 30,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1918"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Enter Details in create Account",
+            "result": {
+              "status": "passed",
+              "duration": 53002
+            },
+            "line": 31,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:383"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "ICO-0020 Billing information are displayed in incart",
+            "result": {
+              "status": "passed",
+              "duration": 51005
+            },
+            "line": 32,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1932"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Enter Payment Method",
+            "result": {
+              "status": "passed",
+              "duration": 24002
+            },
+            "line": 33,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:439"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "ICO-0020 Verify the Checkout Page",
+            "result": {
+              "status": "passed",
+              "duration": 32022
+            },
+            "line": 34,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1910"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "SoG order conformation is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 7049
+            },
+            "line": 35,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1998"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "click on logout button",
+            "result": {
+              "status": "passed",
+              "duration": 23165
+            },
+            "line": 36,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:247"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "hidden": true,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\support\\hooks.ts:30"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "url-instant-checkout-for-getgold,getplatinum-and-sog",
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "70.0.3538.67"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]

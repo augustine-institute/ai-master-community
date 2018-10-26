@@ -1,0 +1,641 @@
+[
+  {
+    "description": "  As a user of FORMED, I should be able to go to the homepage and\n  assert that all the elements are there",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "This file will test the Credit Plan Subscription",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Check_Out"
+      }
+    ],
+    "uri": "D:\\Rajesh\\cucumber\\airoot\\features\\Check_Out.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "FORMED Landing Page",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Check_Out"
+          }
+        ],
+        "id": "this-file-will-test-the-credit-plan-subscription;formed-landing-page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I navigate to \"/\"",
+            "result": {
+              "status": "passed",
+              "duration": 23869
+            },
+            "isBackground": true,
+            "line": 7,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "navigate to market page",
+            "result": {
+              "status": "passed",
+              "duration": 45005
+            },
+            "line": 11,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:24"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to listen products",
+            "result": {
+              "status": "passed",
+              "duration": 10002
+            },
+            "line": 12,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:236"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on espanol Listen Link and Verify",
+            "result": {
+              "status": "passed",
+              "duration": 27028
+            },
+            "line": 13,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2230"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to watch products",
+            "result": {
+              "status": "passed",
+              "duration": 10000
+            },
+            "line": 14,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:231"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "click on feature film link and verify",
+            "result": {
+              "status": "passed",
+              "duration": 27025
+            },
+            "line": 15,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2173"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on Product in watch",
+            "result": {
+              "status": "passed",
+              "duration": 15002
+            },
+            "line": 16,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:471"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on Add to cart",
+            "result": {
+              "status": "passed",
+              "duration": 20003
+            },
+            "line": 17,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:282"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to listen products",
+            "result": {
+              "status": "passed",
+              "duration": 10000
+            },
+            "line": 18,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:236"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "click on Talks",
+            "result": {
+              "status": "passed",
+              "duration": 15002
+            },
+            "line": 19,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1393"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on Product2 in Talks",
+            "result": {
+              "status": "passed",
+              "duration": 25003
+            },
+            "line": 20,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:480"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on Add to cart",
+            "result": {
+              "status": "passed",
+              "duration": 20001
+            },
+            "line": 21,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:282"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0060 click on incart icon",
+            "result": {
+              "status": "passed",
+              "duration": 11003
+            },
+            "line": 22,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:287"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "CO-0010 Verify Check Out in Cart",
+            "result": {
+              "status": "passed",
+              "duration": 13020
+            },
+            "line": 23,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:485"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "PBP-0060 click on incart icon",
+            "result": {
+              "status": "passed",
+              "duration": 11000
+            },
+            "line": 24,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:287"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "CO-0030 delete product from Cart",
+            "result": {
+              "status": "passed",
+              "duration": 10001
+            },
+            "line": 25,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:499"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "PBP-0060 click on incart icon",
+            "result": {
+              "status": "passed",
+              "duration": 10999
+            },
+            "line": 26,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:287"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "Click on Checkout in Cart Summary",
+            "result": {
+              "status": "passed",
+              "duration": 20001
+            },
+            "line": 27,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:530"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "CO-0040 Create Account and Continue login is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 8056
+            },
+            "line": 28,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:519"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "VR-0020 Click on the create an account",
+            "result": {
+              "status": "passed",
+              "duration": 18021
+            },
+            "line": 29,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:554"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "CO-0050 Verify Details in create Account",
+            "result": {
+              "status": "passed",
+              "duration": 29170
+            },
+            "line": 30,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:735"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Enter Details in create Account",
+            "result": {
+              "status": "passed",
+              "duration": 53004
+            },
+            "line": 31,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:349"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Enter Billing information",
+            "result": {
+              "status": "passed",
+              "duration": 38004
+            },
+            "line": 32,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:371"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Enter Payment Method",
+            "result": {
+              "status": "passed",
+              "duration": 24006
+            },
+            "line": 33,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:405"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Verify the Checkout Page",
+            "result": {
+              "status": "passed",
+              "duration": 45028
+            },
+            "line": 34,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:431"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "click on get credit plan in market view",
+            "result": {
+              "status": "passed",
+              "duration": 16002
+            },
+            "line": 35,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:753"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "click on credits",
+            "result": {
+              "status": "passed",
+              "duration": 53030
+            },
+            "line": 36,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:632"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "CO-0080 Enter CVV",
+            "result": {
+              "status": "passed",
+              "duration": 35004
+            },
+            "line": 37,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:643"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "CO-0080 Click on place Order",
+            "result": {
+              "status": "passed",
+              "duration": 35001
+            },
+            "line": 38,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:650"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "CPS-0090 Available credits are displayed",
+            "result": {
+              "status": "passed",
+              "duration": 5025
+            },
+            "line": 39,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:705"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to watch products",
+            "result": {
+              "status": "passed",
+              "duration": 10001
+            },
+            "line": 40,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:231"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "click on Documentreies link and verify",
+            "result": {
+              "status": "passed",
+              "duration": 34025
+            },
+            "line": 41,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2180"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "click on watch Documentreies product1",
+            "result": {
+              "status": "passed",
+              "duration": 30001
+            },
+            "line": 42,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:758"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on Add to cart",
+            "result": {
+              "status": "passed",
+              "duration": 20002
+            },
+            "line": 43,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:282"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to listen products",
+            "result": {
+              "status": "passed",
+              "duration": 10002
+            },
+            "line": 44,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:236"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on audiobooks Link and Verify",
+            "result": {
+              "status": "passed",
+              "duration": 22024
+            },
+            "line": 45,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2224"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on Product in Audio Books",
+            "result": {
+              "status": "passed",
+              "duration": 30002
+            },
+            "line": 46,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:312"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Click on Add to cart",
+            "result": {
+              "status": "passed",
+              "duration": 20001
+            },
+            "line": 47,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:282"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "PBP-0060 click on incart icon",
+            "result": {
+              "status": "passed",
+              "duration": 11004
+            },
+            "line": 48,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:287"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "Click on Checkout in Cart Summary",
+            "result": {
+              "status": "passed",
+              "duration": 20002
+            },
+            "line": 49,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:530"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "CO-0100 Click on Apply credits",
+            "result": {
+              "status": "passed",
+              "duration": 14042
+            },
+            "line": 50,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:763"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "CO-0080 Enter CVV",
+            "result": {
+              "status": "passed",
+              "duration": 35001
+            },
+            "line": 51,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:643"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "CO-0080 Click on place Order",
+            "result": {
+              "status": "passed",
+              "duration": 35003
+            },
+            "line": 52,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:650"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "CPS-0080 Order Confirmation is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 25050
+            },
+            "line": 53,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:672"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "click on logout button",
+            "result": {
+              "status": "passed",
+              "duration": 23031
+            },
+            "line": 54,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:213"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "result": {
+              "status": "passed",
+              "duration": 1
+            },
+            "hidden": true,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\support\\hooks.ts:30"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "this-file-will-test-the-credit-plan-subscription",
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "69.0.3497.100"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]

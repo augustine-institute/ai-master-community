@@ -1,0 +1,109 @@
+[
+  {
+    "description": "  As a user of FORMED, I should be able to go to the homepage and\n  assert that all the elements are there",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "This file will test the Formed Community",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Create_delete_Comments_Replies"
+      }
+    ],
+    "uri": "D:\\Rajesh\\cucumber\\airoot\\features\\Create_delete_Comments_Replies - Copy (3) - Copy.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Create and delete comments and replies",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Create_delete_Comments_Replies"
+          }
+        ],
+        "id": "this-file-will-test-the-formed-community;create-and-delete-comments-and-replies",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I navigate to \"/\"",
+            "result": {
+              "status": "passed",
+              "duration": 23236
+            },
+            "isBackground": true,
+            "line": 7,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:21"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "FCF-0020 navigate to community page and Enter parish user name details",
+            "result": {
+              "status": "passed",
+              "duration": 42006
+            },
+            "line": 11,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:39"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "FCF-0170 Click on visit group and click on group roster",
+            "result": {
+              "status": "failed",
+              "duration": 27023,
+              "error_message": "WebDriverError: chrome not reachable\n  (Session info: chrome=68.0.3440.106)\n  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 6.3.9600 x86_64)\n    at Object.checkLegacyResponse (D:\\Rajesh\\cucumber\\airoot\\node_modules\\selenium-webdriver\\lib\\error.js:546:15)\n    at parseHttpResponse (D:\\Rajesh\\cucumber\\airoot\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at doSend.then.response (D:\\Rajesh\\cucumber\\airoot\\node_modules\\selenium-webdriver\\lib\\http.js:441:30)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+            },
+            "line": 12,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:345"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "FCF-0180 click on New Post",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:354"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "result": {
+              "status": "failed",
+              "duration": 4013,
+              "error_message": "WebDriverError: chrome not reachable\n  (Session info: chrome=68.0.3440.106)\n  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 6.3.9600 x86_64)\n    at Object.checkLegacyResponse (D:\\Rajesh\\cucumber\\airoot\\node_modules\\selenium-webdriver\\lib\\error.js:546:15)\n    at parseHttpResponse (D:\\Rajesh\\cucumber\\airoot\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at doSend.then.response (D:\\Rajesh\\cucumber\\airoot\\node_modules\\selenium-webdriver\\lib\\http.js:441:30)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+            },
+            "hidden": true,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\support\\hooks.ts:30"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "this-file-will-test-the-formed-community",
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "68.0.3440.106"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]

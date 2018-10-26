@@ -1,0 +1,290 @@
+[
+  {
+    "description": "  As a user of FORMED, I should be able to go to the homepage and\n  assert that all the elements are there",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "This file will test the Setup_Group_Button is working or not",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Setup_Group_Button"
+      }
+    ],
+    "uri": "D:\\Rajesh\\cucumber\\airoot\\features\\Setup_Group_Button.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Setup Group Button for Annual Subscription",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Setup_Group_Button"
+          }
+        ],
+        "id": "this-file-will-test-the-setup_group_button-is-working-or-not;setup-group-button-for-annual-subscription",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I navigate to \"/\"",
+            "result": {
+              "status": "passed",
+              "duration": 24152
+            },
+            "isBackground": true,
+            "line": 7,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "navigate to market page",
+            "result": {
+              "status": "passed",
+              "duration": 45003
+            },
+            "line": 11,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:24"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "i move to subscription products",
+            "result": {
+              "status": "passed",
+              "duration": 10000
+            },
+            "line": 12,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:280"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "click on ondemand subscription",
+            "result": {
+              "status": "passed",
+              "duration": 23002
+            },
+            "line": 13,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1318"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "VR-0020 sign in group detail is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 21070
+            },
+            "line": 14,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1324"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "VR-0020 click on checkout button",
+            "result": {
+              "status": "passed",
+              "duration": 23003
+            },
+            "line": 15,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1336"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "VR-0020 Click on the create an account",
+            "result": {
+              "status": "passed",
+              "duration": 33033
+            },
+            "line": 16,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:587"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Enter Details in create Account",
+            "result": {
+              "status": "passed",
+              "duration": 53003
+            },
+            "line": 17,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:383"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "PBP-0070 Enter Billing information",
+            "result": {
+              "status": "passed",
+              "duration": 38003
+            },
+            "line": 18,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:405"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "SGB-0010 Enter Payment Method with Form fund",
+            "result": {
+              "status": "passed",
+              "duration": 23002
+            },
+            "line": 19,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1474"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "SGB-0020 agree for terms of Funding",
+            "result": {
+              "status": "passed",
+              "duration": 20020
+            },
+            "line": 20,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1490"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "SGB-0020 Set goal",
+            "result": {
+              "status": "passed",
+              "duration": 8022
+            },
+            "line": 21,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1497"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "SGB-0020 Click on Continue to Organisation",
+            "result": {
+              "status": "passed",
+              "duration": 10000
+            },
+            "line": 22,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1510"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "VR-0040 Choose organization",
+            "result": {
+              "status": "passed",
+              "duration": 32002
+            },
+            "line": 23,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1597"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "VR-0040 Place Order button is displayed and click on place order button",
+            "result": {
+              "status": "passed",
+              "duration": 32023
+            },
+            "line": 24,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1504"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "SGB-0030 summary Page is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 20030
+            },
+            "line": 25,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1519"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "SGB-0040 Click on Setup group and verify",
+            "result": {
+              "status": "passed",
+              "duration": 23001
+            },
+            "line": 26,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1526"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "SGB-0050 Enter Organisation information",
+            "result": {
+              "status": "passed",
+              "duration": 7045
+            },
+            "line": 27,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:1559"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "hidden": true,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\support\\hooks.ts:30"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "this-file-will-test-the-setup_group_button-is-working-or-not",
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "70.0.3538.67"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]

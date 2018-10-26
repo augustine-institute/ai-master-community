@@ -1,0 +1,121 @@
+[
+  {
+    "description": "  As a user of FORMED, I should be able to go to the homepage and\n  assert that all the elements are there",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "For a Logged in User-Test Basic Navigation Formedpage",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@User-Test_Basic_Navigation_Formedpage"
+      }
+    ],
+    "uri": "D:\\Rajesh\\cucumber\\airoot\\features\\For_a_Logged_in_User-Test_Basic_Navigation_Formedpage.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "For a Logged in User-Test Basic Navigation Formedpage",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@User-Test_Basic_Navigation_Formedpage"
+          }
+        ],
+        "id": "for-a-logged-in-user-test-basic-navigation-formedpage;for-a-logged-in-user-test-basic-navigation-formedpage",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I navigate to \"/\"",
+            "result": {
+              "status": "passed",
+              "duration": 22943
+            },
+            "isBackground": true,
+            "line": 7,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "LLP-0020 Click on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 25004
+            },
+            "line": 12,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2197"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "Enter Name and password for individual user",
+            "result": {
+              "status": "passed",
+              "duration": 7000
+            },
+            "line": 13,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2324"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "navigate to market page",
+            "result": {
+              "status": "passed",
+              "duration": 45002
+            },
+            "line": 14,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:24"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "navigate to formed page",
+            "result": {
+              "status": "passed",
+              "duration": 10002
+            },
+            "line": 15,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\features\\step_definitions\\homepage.steps.ts:2320"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "result": {
+              "status": "passed",
+              "duration": 1
+            },
+            "hidden": true,
+            "match": {
+              "location": "D:\\Rajesh\\cucumber\\airoot\\support\\hooks.ts:30"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "for-a-logged-in-user-test-basic-navigation-formedpage",
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "69.0.3497.100"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]
