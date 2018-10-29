@@ -23,10 +23,9 @@ defineSupportCode(function ({Given, Then, When}) {
         await delay(15000);
     });
     When('FCF-0010 navigate to community page', async  () => {
-        browser.navigate().refresh();
-        await delay(20000);
+        await delay(10000);
         element(by.xpath(".//*[@id='header']/div/div/div/div/global-nav/ul/li[2]/a")).click();
-        await delay(20000);
+        await delay(30000);
     });
     Then('FCF-0010 Enter Parish user name and password', async  () => {
         element(by.xpath(".//*[@id='simple-dropdown']")).click();
@@ -37,10 +36,9 @@ defineSupportCode(function ({Given, Then, When}) {
         await delay(1000);
         element(by.xpath(".//*[@id='header']/div/div/div/div/ul/profile-menu/div/div/span/div/login/form/button")).click();
         await delay(30000);
-        element(by.xpath(".//*[@id='simple-dropdown']/span")).click();
-        await delay(10000);
     });
     When('FCF-0020 navigate to community page and Enter parish user name details', async  () => {
+        await delay(5000);
         element(by.xpath(".//*[@id='header']/div/div[1]/div/div/global-nav/ul/li[2]/a")).click();
         await delay(20000);
         element(by.xpath(".//*[@id='simple-dropdown']")).click();
@@ -58,6 +56,9 @@ defineSupportCode(function ({Given, Then, When}) {
         await delay(20000);
     });
     Then('FCF-0020 Feature and group tab in dashboard menu', async  () => {
+        await delay(15000);
+        element(by.xpath(".//*[@id='simple-dropdown']/span")).click();
+        await delay(10000);
         element(by.xpath(".//*[@id='header']/div/div[1]/div/div/ul/profile-menu/div/div/div/div/div[2]/span[1]/a")).click();
         await delay(10000);
         await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/ul/li[1]"))).to.eventually.exist;
@@ -241,6 +242,9 @@ When('FCF-0160 click on View group', async () =>{
     await delay(10000);
 });
 Then('FCF-0130 click on edit button' , async () => {
+    await delay(15000);
+    browser.navigate().refresh();
+    await delay(25000);
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div/modal-link/a/span")).click();
     await delay(15000);
 });
@@ -260,12 +264,24 @@ Then('FCF-0130 click on managesessions and create a session using Youtube' , asy
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-embed/div[2]/div[2]/div/textarea")).sendKeys('<iframe width="560" height="315" src="https://www.youtube.com/embed/uHUTbq-j0UU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
     await delay(10000);
 });
+Then('FCF-0140 Click on manage sessions' , async () => {
+    await delay(10000);
+    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/ul/li[2]/a/tab-heading/div/h3"))).to.eventually.exist;
+    await delay(2000);
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/ul/li[2]/a/tab-heading/div/h3")).click();
+    await delay(10000);
+    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/div[2]/a/span[2]"))).to.eventually.exist;
+    await delay(2000);
+});
 Then('FCF-0130 click on save button', async () => {
     await delay(10000);
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[2]/button")).click();
     await delay(30000);
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[1]/i")).click();
+    await delay(10000);
 });
 Then('FCF-0140 create another session' , async () => {
+    await delay(20000);
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/ul/li[2]/a/tab-heading/div/h3")).click();
     await delay(10000);
     await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/div[2]/a/span[2]"))).to.eventually.exist;
@@ -275,8 +291,10 @@ Then('FCF-0140 create another session' , async () => {
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[1]/input")).sendKeys("Catholic");
     await delay(5000);
     element(by.xpath("/html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).sendKeys("So much content, it’s my go-to tool for Catholic learning. 5 stars!");
-    await delay(15000);
+    await delay(5000);
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-embed/div[2]/div[2]/div/textarea")).sendKeys('<iframe src="https://player.vimeo.com/video/76979871?embedparameter=value" width="640" height="360" frameborder="0" allowfullscreen></iframe>');
+    await delay(10000);
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[2]/button")).click();
     await delay(20000);
 });
 Then('FCF-0140 create a session using Vimeo', async () => {
@@ -289,11 +307,11 @@ Then('FCF-0140 create a session using Vimeo', async () => {
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[1]/input")).sendKeys("Formed");
     await delay(5000);
     element(by.xpath("/html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).sendKeys("I’m so excited that FORMED has an app! As someone who has come back to the Catholic faith, FORMED has been such an important part of my love for the Church.");
-    await delay(5000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-type-selector/div/div/div[2]/div[1]/div[2]/div")).click();
-    await delay(5000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-embed/div[2]/div[2]/div/textarea")).sendKeys('<iframe src="https://player.vimeo.com/video/76979871?embedparameter=value" width="640" height="360" frameborder="0" allowfullscreen></iframe>');
     await delay(10000);
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-type-selector/div/div/div[2]/div[1]/div[2]/div")).click();
+    await delay(10000);
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-embed/div[2]/div[2]/div/textarea")).sendKeys('<iframe src="https://player.vimeo.com/video/76979871?embedparameter=value" width="640" height="360" frameborder="0" allowfullscreen></iframe>');
+    await delay(15000);
 });
 When('FCF-0140 click on dropdown from manage sessions', async() => {
     await delay(10000);
@@ -358,15 +376,11 @@ Then('FCF-0140 create a session using Audio', async () => {
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[1]/input")).sendKeys("Formed");
     await delay(5000);
     element(by.xpath("/html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).sendKeys("I’m so excited that FORMED has an app! As someone who has come back to the Catholic faith, FORMED has been such an important part of my love for the Church.");
-    await delay(5000);
+    await delay(10000);
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-type-selector/div/div/div[2]/div[1]/div[3]/div")).click();
-    await delay(5000);
+    await delay(10000);
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-embed/div[3]/div[2]/div/textarea")).sendKeys('<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/328259811&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
     await delay(10000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/create-group-view/div[2]/button")).click();
-    await delay(15000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/create-group-view/div[1]/ul/li[3]/a/tab-heading/div/h3")).click();
-    await delay(5000);
 });
 Then('FCF-0170 Click on visit group and click on group roster', async() => {
     await delay(5000);
@@ -425,9 +439,12 @@ When('FCF-0210 enter the text in replay textarea', async() => {
     await delay(5000);
 });
 When('FCF-0140 click on save button and cencel button', async() => {
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/create-group-view/div[2]/button")).click();
     await delay(15000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/create-group-view/div[2]/div/a")).click();
+    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[2]/button"))).to.eventually.exist;
+    await delay(2000);
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[2]/button")).click();
+    await delay(15000);
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[1]/i")).click();
     await delay(10000);
 });
 When('FCF-0290 delete the Comments', async() => {
@@ -553,13 +570,14 @@ Then('FCF-0120 click on create feature and discussion group', async () => {
     await delay(10000);
 })
 When('FCF-0110 naviagte to watch link and click on movies', async () => {
-    browser.actions().mouseMove(element(by.xpath("//a[@href='/watch']"))).perform();
-    await delay(5000);
+    await delay(10000);
+    browser.actions().mouseMove(element(by.xpath(".//*[@id='header']/div/div[3]/div/main-nav/ul/li[2]/a"))).perform();
+    await delay(10000);
     element(by.xpath(".//*[@id='header']/div/div[3]/div/main-nav/ul/li[2]/segmented-menu-item/div/segmented-links/div/div[1]/a")).click();
     await delay(20000);
     await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/segmented-page/div/div[1]/segment/div[2]/div/stripe/div/div/div[1]/div[1]/h3"))).to.eventually.exist;
     await delay(2000);
-    element(by.xpath(".//*[@id='scroll-top']/div/segmented-page/div/div[1]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[6]/div/a/img")).click();
+    element(by.xpath(".//*[@id='scroll-top']/div/segmented-page/div/div[1]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[5]/div/a/img")).click();
     await delay(20000);
 });
 Then('FCF-0110 click on create feature and discussion group', async () => {
@@ -569,6 +587,8 @@ Then('FCF-0110 click on create feature and discussion group', async () => {
     await delay(8000);
 });
 Then('FCF-0260 click on new button and feature content option is displayed', async () => {
+    await delay(20000);
+    browser.navigate().refresh();
     await delay(25000);
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[1]/h4/a/span/div/div[2]/span/a")).click();
     await delay(8000);
@@ -619,7 +639,7 @@ When('FCF-0280 create a feature using a Soundcloud embed code', async () => {
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-embed/div[3]/div[2]/div/textarea")).sendKeys('<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/328259811&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
     await delay(8000);
 });
-Then('FCF-280 parish admin community page is dispalyed' , async () => {
+Then('FCF-0280 parish admin community page is dispalyed' , async () => {
     await expect(browser.findElement(by.xpath(".//*[@id='community-tabs']/div/div[1]/div[1]/organization-header/div/div[3]/div/div/share/ul/li[1]/a"))).to.eventually.exist;
     await delay(2000);
     await expect(browser.findElement(by.xpath("//*[@id='community-tabs']/div/div[1]/div[1]/organization-header/div/div[3]/div/div/share/ul/li[2]/a"))).to.eventually.exist;
@@ -632,6 +652,7 @@ Then('FCF-280 parish admin community page is dispalyed' , async () => {
     await delay(2000);
 });
 Then('FCF-0280 Click on save button', async () => {
+    await delay(5000);
     await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/input"))).to.eventually.exist;
     await delay(2000);
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/input")).click();
