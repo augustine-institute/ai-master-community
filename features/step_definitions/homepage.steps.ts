@@ -75,10 +75,10 @@ defineSupportCode(function ({Given, Then, When}) {
         await delay(10000);
     });
     Then('FCF-0040 click on image in audio books' , async () => {
-        await delay(20000);
-        await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/segmented-page/div/div[2]/segment/div[7]/div/stripe/div/div/div[2]/div/div/div/div/div[8]/div/a/img"))).to.eventually.exist;
+        await delay(25000);
+        await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/segmented-page/div/div[4]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[9]/div/a/img"))).to.eventually.exist;
         await delay(2000);
-        element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/segmented-page/div/div[2]/segment/div[7]/div/stripe/div/div/div[2]/div/div/div/div/div[8]/div/a/img")).click();
+        element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/segmented-page/div/div[4]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[9]/div/a/img")).click();
         await delay(20000);
     });
     Then('FCF-0050 click on create feature and discussion group', async () => {
