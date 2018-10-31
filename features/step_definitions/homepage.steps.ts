@@ -72,13 +72,14 @@ defineSupportCode(function ({Given, Then, When}) {
         browser.actions().mouseMove(element(by.xpath("//a[@href='/listen']"))).perform();
         await delay(5000);
         element(by.xpath(".//*[@id='header']/div/div[3]/div/main-nav/ul/li[3]/segmented-menu-item/div/segmented-links/div/div[4]/a")).click();
-        await delay(10000);
+		element(by.xpath(".//*[@id='header']/div/div[3]/div/main-nav/ul/li[3]/segmented-menu-item/div/segmented-links/div/div[4]/a")).click();
+		await delay(10000);
     });
     Then('FCF-0040 click on image in audio books' , async () => {
         await delay(25000);
-        await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/segmented-page/div/div[4]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[9]/div/a/img"))).to.eventually.exist;
+        await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/segmented-page/div/div[4]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[8]/div/a/img"))).to.eventually.exist;
         await delay(2000);
-        element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/segmented-page/div/div[4]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[9]/div/a/img")).click();
+        element(by.xpath(".//*[@id='scroll-top']/div/segmented-page/div/div[4]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[8]/div/a/img")).click();
         await delay(20000);
     });
     Then('FCF-0050 click on create feature and discussion group', async () => {
