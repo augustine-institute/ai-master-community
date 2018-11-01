@@ -38,7 +38,7 @@ defineSupportCode(function ({Given, Then, When}) {
         await delay(30000);
     });
     When('FCF-0020 navigate to community page and Enter parish user name details', async  () => {
-        await delay(5000);
+        await delay(25000);
         element(by.xpath(".//*[@id='header']/div/div[1]/div/div/global-nav/ul/li[2]/a")).click();
         await delay(20000);
         element(by.xpath(".//*[@id='simple-dropdown']")).click();
@@ -66,7 +66,7 @@ defineSupportCode(function ({Given, Then, When}) {
         await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/ul/li[2]"))).to.eventually.exist;
         await delay(2000);
         element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/ul/li[2]/a/tab-heading/div/i")).click();
-        await delay(15000);
+        await delay(25000);
     });
     When('FCF-0030 naviagte to listen link and click on audio books' , async () =>{
         browser.actions().mouseMove(element(by.xpath("//a[@href='/listen']"))).perform();
@@ -310,7 +310,7 @@ Then('FCF-0140 create a session using Vimeo', async () => {
     element(by.xpath("/html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).sendKeys("I’m so excited that FORMED has an app! As someone who has come back to the Catholic faith, FORMED has been such an important part of my love for the Church.");
     await delay(10000);
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-type-selector/div/div/div[2]/div[1]/div[2]/div")).click();
-    await delay(10000);
+    await delay(15000);
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-embed/div[2]/div[2]/div/textarea")).sendKeys('<iframe src="https://player.vimeo.com/video/76979871?embedparameter=value" width="640" height="360" frameborder="0" allowfullscreen></iframe>');
     await delay(15000);
 });
@@ -406,7 +406,7 @@ When('FCF-0180 click on New Post', async() => {
 });
 Then('FCF-0190 click on Comments', async() => {
     await delay(5000);
-    element(by.xpath(".//*[@id='content']/div/div/div[4]/div[2]/div/div/ul/li[1]/div[2]/div[2]/div/div/a")).click();
+    element(by.xpath(".//*[@id='content']/div/div/div[4]/div[2]/div/div/ul/li[1]/div/div/div/div/a")).click();
     await delay(5000);
     await expect(browser.findElement(by.xpath(".//*[@id='content']/div/div[3]/div[2]/header/div/ul/li[2]/div/button[1]"))).to.eventually.exist;
     await delay(2000);
@@ -434,10 +434,11 @@ When('FCF-0210 click on likes and replay buttons', async() => {
     await delay(5000);
 });
 When('FCF-0210 enter the text in replay textarea', async() => {
+    await delay(15000);
     element(by.xpath(".//*[@id='composer']/div/div[2]/div/div[1]/div[2]/div/div/textarea")).sendKeys('Thank you');
     await delay(5000);
     element(by.xpath(".//*[@id='composer']/div/div[2]/div/div[1]/div[2]/div/ul/li[1]/button")).click();
-    await delay(5000);
+    await delay(15000);
 });
 When('FCF-0140 click on save button and cencel button', async() => {
     await delay(15000);
@@ -471,6 +472,7 @@ Then('FCF-0220 Enter text in Edit textarea', async() => {
     await delay(5000);
 });
 Then('FCF-0230 click on Return to the session', async () => {
+    await delay(15000);
     await expect(browser.findElement(by.xpath(".//*[@id='content']/div/div[1]/a"))).to.eventually.exist;
     await delay(5000);
     element(by.xpath(".//*[@id='content']/div/div[1]/a")).click();
