@@ -407,7 +407,7 @@ When('FCF-0180 click on New Post', async() => {
 Then('FCF-0190 click on Comments', async() => {
     await delay(5000);
     element(by.xpath(".//*[@id='content']/div/div/div[4]/div[2]/div/div/ul/li[1]/div/div/div/div/a")).click();
-    await delay(5000);
+    await delay(10000);
     await expect(browser.findElement(by.xpath(".//*[@id='content']/div/div[3]/div[2]/header/div/ul/li[2]/div/button[1]"))).to.eventually.exist;
     await delay(2000);
 });
