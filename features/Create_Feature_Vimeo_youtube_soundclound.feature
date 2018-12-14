@@ -15,10 +15,14 @@ Feature: CMM-FCF-002-Formed Community
   Then FCF-0260 Feature Editor is displayed
   When FCF-0260 create a feature using a Youtube embed code
   Then FCF-0280 Click on save button
+  When FCF-0010 navigate to community page
+  Then FCF-0020 Feature and group tab in dashboard menu
   Then FCF-0260 click on new button and feature content option is displayed
   Then FCF-0260 Feature Editor is displayed
   When FCF-0270 create a feature using a vimeo code
   Then FCF-0280 Click on save button
+  When FCF-0010 navigate to community page
+  Then FCF-0020 Feature and group tab in dashboard menu
   Then FCF-0260 click on new button and feature content option is displayed
   Then FCF-0260 Feature Editor is displayed
   When FCF-0280 create a feature using a Soundcloud embed code
