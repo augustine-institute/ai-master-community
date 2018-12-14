@@ -590,7 +590,7 @@ Then('FCF-0110 click on create feature and discussion group', async () => {
     await delay(8000);
 });
 Then('FCF-0260 click on new button and feature content option is displayed', async () => {
-    await delay(20000);
+    await delay(8000);
     browser.navigate().refresh();
     await delay(25000);
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[1]/h4/a/span/div/div[2]/span/a")).click();
