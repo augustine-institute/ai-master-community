@@ -10,7 +10,6 @@ Feature: CMM-FCF-003-Formed Community
   Scenario: one click Custom Feature for Audio Video Book Study
   When FCF-0010 navigate to community page
   Then FCF-0010 Enter Parish user name and password
-  Then FCF-0020 Feature and group tab in dashboard menu
   When FCF-0030 naviagte to listen link and click on audio books
   Then FCF-0040 click on image in audio books
   Then FCF-0050 click on create feature and discussion group
