@@ -41,7 +41,7 @@ defineSupportCode(function ({Given, Then, When}) {
         element(by.xpath(".//*[@id='header']/div/div/div/div/ul/profile-menu/div/div/span/div/login/form/input[2]")).sendKeys("formed");
         await delay(1000);
         element(by.xpath(".//*[@id='header']/div/div/div/div/ul/profile-menu/div/div/span/div/login/form/button")).click();
-        await delay(30000);
+        await delay(25000);
     });
     When('FCF-0020 navigate to community page and Enter parish user name details', async  () => {
         await delay(25000);
@@ -66,7 +66,7 @@ defineSupportCode(function ({Given, Then, When}) {
         element(by.xpath(".//*[@id='simple-dropdown']/span")).click();
         await delay(10000);
         element(by.xpath(".//*[@id='header']/div/div[1]/div/div/ul/profile-menu/div/div/div/div/div[2]/span[1]/a")).click();
-        await delay(10000);
+        await delay(20000); 
         await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/ul/li[1]"))).to.eventually.exist;
         await delay(2000);
         await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/ul/li[2]"))).to.eventually.exist;
