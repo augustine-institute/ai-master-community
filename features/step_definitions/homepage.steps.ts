@@ -30,9 +30,10 @@ defineSupportCode(function ({Given, Then, When}) {
     When('HPF-0030 click on demand page', async () => {
         await delay(5000);
         element(by.xpath(".//a[@href='https://beta.formed.org/']")).click();
-        await delay(30000);                         
+        await delay(40000);                         
     });
     Then('FCF-0010 Enter Parish user name and password', async  () => {
+        await delay(5000);
         element(by.xpath(".//*[@id='simple-dropdown']")).click();
         await delay(5000);
         element(by.xpath(".//*[@id='header']/div/div/div/div/ul/profile-menu/div/div/span/div/login/form/input[1]")).sendKeys("test+parish@formed.org");
@@ -683,6 +684,15 @@ When('REPO-002-A Work Area and Template Catalog is displayed', async () => {
 Then('REPO-002-A Click on the Template Catalog', async () => {
     await delay(5000);
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[1]/h4/a/span/div/div[1]")).click();
+    await delay(25000);
+    await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[1]/div/form/div[4]/input"))).to.eventually.exist;
+    await delay(2000);
+});
+Then('REPO-002 Click on the Template Catalog', async () => {
+    await delay(5000);
+    browser.executeScript('window.ScrollTo(632,18)');
+    await delay(5000);
+    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[1]/h4/a/span/div/div[1]")).click();
     await delay(15000);
     await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[1]/div/form/div[4]/input"))).to.eventually.exist;
     await delay(2000);
@@ -694,7 +704,7 @@ Then('REPO-002-A CliCk on the Work Area', async () => {
 });
 Then('REPO-003-A click on USE icon and verify', async () => {
     await delay(5000);
-    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[2]/span/a/i")).click();
+    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div/div[1]/div[2]/span/a")).click();
     await delay(15000);
     await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[2]/span/div/ul/li[1]/a"))).to.eventually.exist;
     await delay(2000);                         
@@ -766,6 +776,8 @@ When('REPO-007 Select Status ALL and verify', async () => {
 });
 Then('REPO-006 Select Type ALL and verify', async () => {
     await delay(5000);
+    browser.executeScript('window.scrollTo(888,10)');
+    await delay(5000);
     element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[1]/div/form/div[2]/div/div[2]/div/div[1]/span/span[2]/span")).click();
     await delay(10000);
     await expect(browser.findElement(by.xpath(".//*[@id='ui-select-choices-row-0-1']/a/div"))).to.eventually.exist;
@@ -782,7 +794,9 @@ When('REPO-006-A Select Group in Type ALL and verify', async () => {
 });
 When('REPO-006-A Select Feature in Type ALL and verify', async () => {
     await delay(5000);
-    element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[1]/div/form/div[2]/div/div[2]/div/div[1]/span")).click();
+    browser.executeScript('window.scrollTo(888,10)');
+    await delay(5000);
+    element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[1]/div/form/div[2]/div/div[2]/div/div[1]/span/span[2]/span")).click();
     await delay(10000);
     element(by.xpath(".//*[@id='ui-select-choices-row-0-2']/a/div")).click();
     await delay(10000);
@@ -812,6 +826,7 @@ Then('REPO-013 Card elements are displayed', async () => {
 });
 When('REPO-014 Click on View more button', async () => {
     await delay(5000);
+    browser.executeScript('window.scrollTo(312,8)');
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[2]/div[2]/span/modal-link/a/span")).click();
     await delay(10000);
     await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/div[2]/div[2]/div/div"))).to.eventually.exist;
@@ -842,10 +857,12 @@ When('REPO-015 click on USE icon and verify', async () => {
 });
 When('REPO-042 Click on USE icon and verify', async () => {
     await delay(5000);
-    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[40]/content-template/div/div[1]/div[2]/span/a")).click();
-    await delay(15000);
+    browser.executeScript('window.scrollTo(474, 142)');
+    await delay(5000);
+    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[2]/span/a")).click();
+    await delay(10000);
     await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[2]/span/div/ul/li[1]/a"))).to.eventually.exist;
-    await delay(2000);                       
+    await delay(2000);                         
     await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[2]/span/div/ul/li[2]/a"))).to.eventually.exist;
     await delay(2000);
     await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[2]/span/div/ul/li[3]/a"))).to.eventually.exist;
@@ -878,6 +895,8 @@ Then('REPO-002 Filters and search are displayed', async () => {
 });
 When('REPO-003 Select Copy to work area option from the use icon', async () => {
     await delay(5000);
+    browser.executeScript('window.scrollTo(902,20)');
+    await delay(5000);
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[41]/content-template/div/div[1]/div[2]/span/a")).click();
     await delay(10000);
     await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[2]/span/div/ul/li[1]/a"))).to.eventually.exist;
@@ -891,6 +910,7 @@ Then('REPO-003 Work area is displayed', async () => {
     await delay(2000);
 });
 When('REPO-004 click on Sort and verify', async () => {  
+    browser.executeScript('window.scrollTo(1105,10)');
     element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[1]/div/form/div[3]/div/div[2]/div/div[1]/span/span[2]/span")).click();
     await delay(15000);
     await expect(browser.findElement(by.xpath(".//*[@id='ui-select-choices-row-1-1']/a/div"))).to.eventually.exist;
@@ -901,15 +921,16 @@ When('REPO-004 click on Sort and verify', async () => {
 Then('REPO-004 Click on A to Z and verify', async () => {  
     element(by.xpath(".//*[@id='ui-select-choices-row-1-1']/a/div")).click();
     await delay(10000);
-    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[1]/h2"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div/div[2]/div[2]/p"))).to.eventually.exist;
     await delay(2000);
     element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[1]/div/form/div[3]/div/div[2]/div/div[1]/span/span[2]/span")).click();
     await delay(15000);
 });
 When('REPO-004 Click on Z to A and verify', async () => {  
+    await delay(10000);
     element(by.xpath(".//*[@id='ui-select-choices-row-1-2']/a/div")).click();
     await delay(10000);
-    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[1]/h2"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div/div[2]/div[2]/p"))).to.eventually.exist;
     await delay(2000);
     element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[1]/div/form/div[3]/div/div[2]/div/div[1]/span/span[2]/span")).click();
     await delay(15000);
@@ -928,9 +949,13 @@ Then('REPO-006 Click on Group option and verify', async () => {
     await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[3]/div/div"))).to.eventually.exist;
     await delay(2000);
 });
+Then('REPO-006 Click on Copy to Work Area', async () => {
+    await delay(5000);
+    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[2]/span/div/ul/li[1]/a")).click();
+    await delay(10000);
+});
 Then('REPO-006 Click on Feature option and verify', async () => {  
-    element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[1]/div/form/div[2]/div/div[2]/div/div[1]/span")).click();
-    await delay(10000); 
+    await delay(5000); 
     element(by.xpath(".//*[@id='ui-select-choices-row-0-2']/a/div")).click();
     await delay(10000); 
     await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[3]/div"))).to.eventually.exist;
@@ -947,16 +972,18 @@ When('REPO-006 Remove Filters and Verify', async () => {
     await delay(2000);
 });
 Then('REPO-006 click on Search icon', async () => {
+    browser.executeScript('window.scrollTo(1403, 729)');
+    await delay(2000);
     element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[1]/div/form/div[4]/input")).sendKeys('AUG');
     await delay(15000); 
     element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[1]/div/form/div[4]/i")).click();
     await delay(10000); 
-    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div/div[3]/div/span/span[3]/a"))).to.eventually.exist;
-    await delay(2000);
 });
 When('REPO-017 Click on Review', async () => {
     await delay(5000);
-    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[40]/content-template/div/div[1]/div[2]/span/a")).click();
+    browser.executeScript('window.scrollTo(443,57)');
+    await delay(2000);
+    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div/div[1]/div[2]/span/a")).click();
     await delay(10000);
     await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[2]/span/div/ul/li[2]/a"))).to.eventually.exist;
     await delay(2000);
@@ -974,6 +1001,8 @@ Then('REPO-017 Group Editor is displayed', async () => {
 });
 Then('REPO-016 Click on Feature option', async () => {
     await delay(5000);
+    browser.executeScript('window.scrollTo(937, 20)');
+    await delay(2000);
     element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[1]/div/form/div[2]/div/div[2]/div/div[1]/span")).click();
     await delay(10000);
     element(by.xpath(".//*[@id='ui-select-choices-row-0-2']/a/div")).click();
@@ -1002,12 +1031,162 @@ Then('REPO-018 Feature Editor is displayed', async () => {
 });
 Then('REPO-043 Click on Approve button', async () => {
     await delay(5000);
+    browser.executeScript('window.scrollTo(443, 141)');
+    await delay(5000); 
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[2]/span/div/ul/li[3]/a")).click();
     await delay(10000);
-    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div/div[1]/div[2]/span/a")).click();
-    await delay(10000); 
     await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div/div[1]/div[2]/span/div/ul/li[3]/a"))).to.eventually.exist;
     await delay(2000);
 });
+Then('REPO-016 Click on Copy to Work Area in USE icon', async () => {
+    await delay(5000);
+    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[2]/span/a")).click();
+    await delay(10000); 
+    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[2]/span/div/ul/li[1]/a")).click();
+    await delay(10000); 
+    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[2]/promo-unit-dashboard-wrapper/div/div/div/div/div[2]/modal-link/a"))).to.eventually.exist;
+    await delay(2000);
 });
-
+Then('REPO-019 Click on Edit button for group', async () => {
+    await delay(5000);
+    browser.executeScript('window.scrollTo(173, 169)');
+    await delay(5000);
+    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div[2]/modal-link/a")).click();
+    await delay(15000); 
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[1]/div/manage-group-view/form/div/media-position-selector/div/div/div[2]/div[1]/div[1]/div")).click();
+    await delay(10000); 
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[2]/button")).click();
+    await delay(10000); 
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[1]/i")).click();
+    await delay(10000); 
+});
+Then('REPO-019 Click on Edit button for Feature', async () => {
+    await delay(5000);
+    browser.executeScript('window.scrollTo(174, 169)');
+    await delay(5000);
+    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div[2]/modal-link/a")).click();
+    await delay(15000); 
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-position-selector/div/div/div[2]/div[1]/div[1]/div")).click();
+    await delay(10000); 
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/input")).click();
+    await delay(15000); 
+});
+Then('REPO-025 Add a Tag in Group Editor', async () => {
+    await delay(5000);
+    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/content-tags/div/tags-input/div/div"))).to.eventually.exist;
+    await delay(2000);                         
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/content-tags/div/tags-input/div/div/input")).click();
+    await delay(10000); 
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/content-tags/div/tags-input/div/div/input")).sendKeys('session');
+    await delay(10000); 
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/background-color/div/div[2]/ul/li[2]/a")).click();
+    await delay(10000);
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
+    await delay(10000); 
+});
+Then('REPO-025 Add a Tag in Feature Editor', async () => {
+    await delay(5000);
+    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div"))).to.eventually.exist;
+    await delay(2000);
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div/input")).click();
+    await delay(10000);
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div/input")).sendKeys('Advent');
+    await delay(10000); 
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
+    await delay(10000); 
+});
+Then('REPO-026 Add Additional tag', async () => {
+    await delay(5000);
+    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div"))).to.eventually.exist;
+    await delay(2000);
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div/input")).sendKeys('Formed');
+    await delay(10000); 
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
+    await delay(10000); 
+    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[3]/div/span/span[1]/a"))).to.eventually.exist;
+    await delay(2000);
+});
+When('REPO-027 Select matching Tag', async () => {
+    await delay(5000);
+    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div"))).to.eventually.exist;
+    await delay(2000);
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div")).sendKeys('Aug');
+    await delay(10000); 
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/auto-complete/div/ul/li/ti-autocomplete-match/ng-include/span")).click();
+    await delay(10000);
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
+    await delay(10000);
+});
+Then('REPO-029 Delete the second tag', async () => {
+    await delay(5000);
+    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div"))).to.eventually.exist;
+    await delay(5000);
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div/ul/li[2]/ti-tag-item/ng-include/a")).click();
+    await delay(10000);    
+    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input"))).to.eventually.exist;
+    await delay(2000);  
+});
+Then('REPO-030 Tags are displayed alphabetical order', async () => {
+    await delay(5000);
+    await expect(element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[3]/div/span/span[1]/a"))).to.eventually.exist;
+    await delay(5000);
+    await expect(element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[3]/div/span/span[2]/a"))).to.eventually.exist;
+	await delay(5000);
+});
+Then('REPO-006 Show Tags is displayed', async () => {
+    await delay(5000);
+    await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[2]/div/a"))).to.eventually.exist;
+    await delay(2000);
+});
+When('REPO-006 Click on Show Tags', async () => {
+    await delay(5000);
+    browser.executeScript('window.scrollTo(150, 10)');
+    await delay(5000);
+    element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[2]/div/a")).click();
+    await delay(10000);
+});
+Then('REPO-007 Tags are displayed', async () => {
+    await delay(5000);
+    await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[2]/div/div/a[1]"))).to.eventually.exist;
+    await delay(2000);
+});
+When('REPO-008 Select one Tag', async () => {
+    await delay(5000);
+    element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[2]/div/div/a[23]")).click();
+    await delay(10000); 
+    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[2]/content-template/div/div[3]/div/span/span[4]/a"))).to.eventually.exist;
+    await delay(2000);
+});
+Then('REPO-010 Select Second Tag in Card', async () => {
+    await delay(5000);
+    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[3]/div/span/span[1]/a")).click();
+    await delay(10000);
+    element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[2]/div/div/a[23]")).click();
+    await delay(10000); 
+});
+Then('REPO-010 Related Tags Cards are displayed', async () => {
+    await delay(5000);
+    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li/content-template/div[2]/div[2]/div[2]/p"))).to.eventually.exist;
+    await delay(2000);
+});
+Then('REPO-011 Clear Tags are displayed', async () => {
+    await delay(5000);
+    await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[2]/div/span/span/a"))).to.eventually.exist;
+    await delay(2000);
+});
+When('REPO-011 Click on Clear Tags', async () => {
+    await delay(5000);
+    element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[2]/div/span/span/a")).click();
+    await delay(10000); 
+});
+Then('REPO-011 Remove selected Tags', async () => {
+    await delay(5000);
+    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[2]/div[2]/p"))).to.eventually.exist;
+    await delay(2000);
+});
+When('REPO-011 click on Hide Tags', async () => {
+    await delay(5000);
+    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[2]/div/span/a")).click();
+    await delay(10000);
+});
+});
