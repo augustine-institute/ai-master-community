@@ -20,7 +20,7 @@ Feature: RTP-002-Repository Test plan
   When REPO-042 Click on USE icon and verify
   Then REPO-043 Click on Approve button
   When REPO-002-A Work Area and Template Catalog is displayed
-  When REPO-002-A Click on the Template Catalog
+  When REPO-002 Click on the Template Catalog
   Then REPO-013 Card elements are displayed
   When REPO-014 Click on View more button
   When REPO-017 Click on Review
