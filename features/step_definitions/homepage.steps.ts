@@ -1154,8 +1154,6 @@ When('REPO-008 Select one Tag', async () => {
     await delay(5000);
     element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[2]/div/div/a[23]")).click();
     await delay(10000); 
-    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[2]/content-template/div/div[3]/div/span/span[4]/a"))).to.eventually.exist;
-    await delay(2000);
 });
 Then('REPO-010 Select Second Tag in Card', async () => {
     await delay(5000);
