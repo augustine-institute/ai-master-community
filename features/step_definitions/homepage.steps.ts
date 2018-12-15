@@ -1146,7 +1146,7 @@ When('REPO-006 Click on Show Tags', async () => {
     await delay(10000);
 });
 Then('REPO-007 Tags are displayed', async () => {
-    await delay(5000);
+    await delay(15000);
     await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[2]/div/div/a[1]"))).to.eventually.exist;
     await delay(2000);
 });
