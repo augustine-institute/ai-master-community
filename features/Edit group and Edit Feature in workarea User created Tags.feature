@@ -29,15 +29,7 @@ Feature: RTP-002-Repository Test plan
   Then REPO-025 Add a Tag in Group Editor
   When REPO-006 Select Type ALL and verify
   When REPO-006 Click on Feature option and verify
-  When REPO-017 Click on Review
-  Then REPO-025 Add a Tag in Feature Editor
-  When REPO-017 Click on Review
-  Then REPO-026 Add Additional tag
-  When REPO-017 Click on Review
-  Then REPO-027 Select matching Tag
-  When REPO-017 Click on Review
-  Then REPO-029 Delete the second tag 
-  Then REPO-030 Tags are displayed alphabetical order
+  
 
 
 
