@@ -690,9 +690,7 @@ Then('REPO-002-A Click on the Template Catalog', async () => {
 });
 Then('REPO-002 Click on the Template Catalog', async () => {
     await delay(5000);
-    browser.executeScript('window.ScrollTo(632,18)');
-    await delay(5000);
-    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[1]/h4/a/span/div/div[1]")).click();
+    element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[1]/h4/a/span/div/div[1]")).click();
     await delay(15000);
     await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[1]/div/form/div[4]/input"))).to.eventually.exist;
     await delay(2000);
@@ -805,23 +803,13 @@ When('REPO-006-A Select Feature in Type ALL and verify', async () => {
 });
 Then('REPO-013 Card elements are displayed', async () => {
     await delay(5000);
-    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[1]/h2"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div/div[1]/div[2]/span/div/ul/li[2]/a"))).to.eventually.exist;
     await delay(2000);
-    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[1]/h3"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div/div[1]/div[2]/span/div/ul/li[1]/a"))).to.eventually.exist;
     await delay(2000);
-    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[2]/div[2]/p"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div/div[1]/div[2]/span/div/ul/li[3]/a"))).to.eventually.exist;
     await delay(2000);
-    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[2]/div[2]/span/modal-link/a/span"))).to.eventually.exist;
-    await delay(2000);
-    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[2]/span/a"))).to.eventually.exist;
-    await delay(2000);
-    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[2]/div[1]/img"))).to.eventually.exist;
-    await delay(2000);
-    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[3]/div/div"))).to.eventually.exist;
-    await delay(2000);
-    await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[2]/div/a"))).to.eventually.exist;
-    await delay(2000);
-    await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[1]/h4/a/span/div/div[1]/h2"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div/div[2]/div[1]/img"))).to.eventually.exist;
     await delay(2000);
 });
 When('REPO-014 Click on View more button', async () => {
@@ -839,7 +827,7 @@ Then('REPO-014 Card Description Overflow', async () => {
     await delay(2000);
     element(by.xpath("html/body/div[3]/div/div/div[1]/i")).click();
     await delay(10000);
-});
+})
 Then('REPO-021 Click on Submit As Template', async () => {
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div[2]/a[3]")).click();
     await delay(10000);
@@ -984,15 +972,13 @@ When('REPO-017 Click on Review', async () => {
     browser.executeScript('window.scrollTo(443,57)');
     await delay(2000);
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div/div[1]/div[2]/span/a")).click();
-    await delay(10000);
-    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[2]/span/div/ul/li[2]/a"))).to.eventually.exist;
-    await delay(2000);
+    await delay(15000);                    
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[2]/span/div/ul/li[2]/a")).click();
     await delay(10000);
 });
 Then('REPO-017 Group Editor is displayed', async () => {
     await delay(5000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/name-and-description/div[1]/input"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("/html/body/div[5]/div/div/promo-unit-modal/div[2]"))).to.eventually.exist;
     await delay(2000);
     await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/content-tags/div/tags-input/div/div"))).to.eventually.exist;
     await delay(2000);
@@ -1079,8 +1065,6 @@ Then('REPO-025 Add a Tag in Group Editor', async () => {
     await delay(10000); 
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/content-tags/div/tags-input/div/div/input")).sendKeys('session');
     await delay(10000); 
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/background-color/div/div[2]/ul/li[2]/a")).click();
-    await delay(10000);
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
     await delay(10000); 
 });
@@ -1092,6 +1076,8 @@ Then('REPO-025 Add a Tag in Feature Editor', async () => {
     await delay(10000);
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div/input")).sendKeys('Advent');
     await delay(10000); 
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/auto-complete/div/ul/li[1]/ti-autocomplete-match/ng-include/span")).click();
+    await delay(10000);
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
     await delay(10000); 
 });
@@ -1103,8 +1089,6 @@ Then('REPO-026 Add Additional tag', async () => {
     await delay(10000); 
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
     await delay(10000); 
-    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[3]/div/span/span[1]/a"))).to.eventually.exist;
-    await delay(2000);
 });
 When('REPO-027 Select matching Tag', async () => {
     await delay(5000);
