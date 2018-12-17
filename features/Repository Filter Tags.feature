@@ -1,5 +1,5 @@
 @Repository_Filter_Tags
-Feature: RTP-001-Repository Test plan
+Feature: CMM-RTP-004-Repository Test plan
   As a user of FORMED, I should be able to go to the homepage and
   assert that all the elements are there
 
