@@ -1,5 +1,5 @@
 @Edit_group_and_Edit_Feature_in_Workarea_User_Created_Tags
-Feature: RTP-002-Repository Test plan
+Feature: CMM-RTP-003-Repository Test plan
   As a user of FORMED, I should be able to go to the homepage and
   assert that all the elements are there
 
