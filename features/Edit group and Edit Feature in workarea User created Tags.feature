@@ -29,6 +29,8 @@ Feature: RTP-002-Repository Test plan
   Then REPO-025 Add a Tag in Group Editor
   When REPO-006 Select Type ALL and verify
   When REPO-006 Click on Feature option and verify
+  When REPO-017 Click on Review
+  Then REPO-025 Add a Tag in Feature Editor
   
 
 
