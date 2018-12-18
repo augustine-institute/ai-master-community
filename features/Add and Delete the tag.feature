@@ -17,7 +17,6 @@ Feature: CMM-RTP-005-Repository Test plan
   Then FCF-0060 click on view community feature
   When REPO-021 Click on Submit As Template
   Then REPO-041 Modifications To Cards Pendig review is displayed
-  When REPO-014 Click on View more button
   When REPO-006 Select Type ALL and verify
   Then REPO-006 Click on Feature option and verify
   When REPO-017 Click on Review
