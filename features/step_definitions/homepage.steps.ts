@@ -946,7 +946,7 @@ Then('REPO-006 Click on Feature option and verify', async () => {
     await delay(5000); 
     element(by.xpath(".//*[@id='ui-select-choices-row-0-2']/a/div")).click();
     await delay(10000); 
-    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[3]/div"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[2]/span/a"))).to.eventually.exist;
     await delay(2000);
 });
 When('REPO-006 Remove Filters and Verify', async () => {
@@ -1076,9 +1076,7 @@ Then('REPO-025 Add a Tag in Feature Editor', async () => {
     await delay(10000);
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div/input")).sendKeys('Advent');
     await delay(10000); 
-    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/auto-complete/div/ul/li[1]/ti-autocomplete-match/ng-include/span")).click();
-    await delay(10000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
     await delay(10000); 
 });
 Then('REPO-026 Add Additional tag', async () => {
