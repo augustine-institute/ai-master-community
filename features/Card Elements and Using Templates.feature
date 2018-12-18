@@ -30,7 +30,6 @@ Feature: CMM-RTP-002-Repository Test plan
   When REPO-042 Click on USE icon and verify
   Then REPO-043 Click on Approve button
   Then REPO-013 Card elements are displayed
-  When REPO-014 Click on View more button
 
 
 
