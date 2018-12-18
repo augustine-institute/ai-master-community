@@ -815,6 +815,7 @@ Then('REPO-013 Card elements are displayed', async () => {
 When('REPO-014 Click on View more button', async () => {
     await delay(5000);
     browser.executeScript('window.scrollTo(312,8)');
+    await delay(10000);
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[2]/div[2]/span/modal-link/a/span")).click();
     await delay(10000);
     await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/div[2]/div[2]/div/div"))).to.eventually.exist;
@@ -977,9 +978,7 @@ When('REPO-017 Click on Review', async () => {
     await delay(10000);
 });
 Then('REPO-017 Group Editor is displayed', async () => {
-    await delay(5000);
-    await expect(browser.findElement(by.xpath("/html/body/div[5]/div/div/promo-unit-modal/div[2]"))).to.eventually.exist;
-    await delay(2000);
+    await delay(15000);
     await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/content-tags/div/tags-input/div/div"))).to.eventually.exist;
     await delay(2000);
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[1]/i")).click();
@@ -1076,7 +1075,9 @@ Then('REPO-025 Add a Tag in Feature Editor', async () => {
     await delay(10000);
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div/input")).sendKeys('Advent');
     await delay(10000); 
-    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/background-color/div/div[1]")).click();
+    await delay(5000); 
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
     await delay(10000); 
 });
 Then('REPO-026 Add Additional tag', async () => {
@@ -1085,6 +1086,8 @@ Then('REPO-026 Add Additional tag', async () => {
     await delay(2000);
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div/input")).sendKeys('Formed');
     await delay(10000); 
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/background-color/div/div[1]")).click();
+    await delay(5000); 
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
     await delay(10000); 
 });
