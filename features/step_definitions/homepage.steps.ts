@@ -1024,10 +1024,19 @@ Then('REPO-043 Click on Approve button', async () => {
     await delay(2000);
 });
 Then('REPO-016 Click on Copy to Work Area in USE icon', async () => {
-    await delay(5000);
-    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[2]/span/a")).click();
+    await delay(15000);
+    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div/div[1]/div[2]/span/a")).click();
     await delay(10000); 
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[2]/span/div/ul/li[1]/a")).click();
+    await delay(10000); 
+    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[2]/promo-unit-dashboard-wrapper/div/div/div/div/div[2]/modal-link/a"))).to.eventually.exist;
+    await delay(2000);
+});
+Then('REPO-016 Click on Copy to Work Area in USE icon for Feature', async () => {
+    await delay(15000);
+    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div/div[1]/div[2]/span/a")).click();
+    await delay(10000); 
+    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div/div[1]/div[2]/span/div/ul/li[1]/a")).click();
     await delay(10000); 
     await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[2]/promo-unit-dashboard-wrapper/div/div/div/div/div[2]/modal-link/a"))).to.eventually.exist;
     await delay(2000);
@@ -1038,7 +1047,7 @@ Then('REPO-019 Click on Edit button for group', async () => {
     await delay(5000);
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div[2]/modal-link/a")).click();
     await delay(15000); 
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[1]/div/manage-group-view/form/div/media-position-selector/div/div/div[2]/div[1]/div[1]/div")).click();
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[1]/div/manage-group-view/form/group-settings/div/div[2]/div[2]/div[1]/div[1]/div")).click();
     await delay(10000); 
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[2]/button")).click();
     await delay(10000); 
@@ -1047,7 +1056,7 @@ Then('REPO-019 Click on Edit button for group', async () => {
 });
 Then('REPO-019 Click on Edit button for Feature', async () => {
     await delay(5000);
-    browser.executeScript('window.scrollTo(174, 169)');
+    browser.executeScript('window.scrollTo(173, 169)');
     await delay(5000);
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div[2]/modal-link/a")).click();
     await delay(15000); 
@@ -1063,6 +1072,8 @@ Then('REPO-025 Add a Tag in Group Editor', async () => {
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/content-tags/div/tags-input/div/div/input")).click();
     await delay(10000); 
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/content-tags/div/tags-input/div/div/input")).sendKeys('session');
+    await delay(10000); 
+    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/background-color/div/div[1]")).click();
     await delay(10000); 
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
     await delay(10000); 
