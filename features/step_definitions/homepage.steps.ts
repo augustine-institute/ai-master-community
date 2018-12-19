@@ -653,7 +653,8 @@ When('FCF-0280 create a feature using a Soundcloud embed code', async () => {
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-embed/div[3]/div[2]/div/textarea")).sendKeys('<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/328259811&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
     await delay(8000);
 });
-Then('FCF-0280 parish admin community page is dispalyed' , async () => {
+Then('FCF-0280 parish admin community page is displayed' , async () => {
+    await delay(20000);
     await expect(browser.findElement(by.xpath(".//*[@id='community-tabs']/div/div[1]/div[1]/organization-header/div/div[3]/div/div/share/ul/li[1]/a"))).to.eventually.exist;
     await delay(2000);
     await expect(browser.findElement(by.xpath("//*[@id='community-tabs']/div/div[1]/div[1]/organization-header/div/div[3]/div/div/share/ul/li[2]/a"))).to.eventually.exist;
