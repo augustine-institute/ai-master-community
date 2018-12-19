@@ -979,7 +979,7 @@ When('REPO-017 Click on Review', async () => {
 });
 Then('REPO-017 Group Editor is displayed', async () => {
     await delay(15000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/content-tags/div/tags-input/div/div"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/name-and-description/div[1]/input"))).to.eventually.exist;
     await delay(2000);
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[1]/i")).click();
     await delay(10000);
