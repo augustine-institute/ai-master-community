@@ -24,7 +24,7 @@ Feature: CMM-FCF-006-Formed Community
   Then FCF-0120 click on View group
   When FCF-0070 Move a feature into the Published
   When navigate to community page
-  Then FCF-0280 parish admin community page is dispalyed
+  Then FCF-0280 parish admin community page is displayed
 
 
 
