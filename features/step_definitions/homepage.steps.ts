@@ -577,7 +577,7 @@ Then('FCF-0120 click on create feature and discussion group', async () => {
     await delay(10000);
 })
 When('FCF-0110 naviagte to watch link and click on movies', async () => {
-    await delay(10000);
+    await delay(30000);
     browser.actions().mouseMove(element(by.xpath(".//*[@id='header']/div/div[3]/div/main-nav/ul/li[2]/a"))).perform();
     await delay(10000);
     element(by.xpath(".//*[@id='header']/div/div[3]/div/main-nav/ul/li[2]/segmented-menu-item/div/segmented-links/div/div[2]/a")).click();
