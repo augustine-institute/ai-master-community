@@ -23,9 +23,9 @@ defineSupportCode(function ({Given, Then, When}) {
         await delay(15000);
     });
     When('FCF-0010 navigate to community page', async  () => {
-        await delay(60000);
+        await delay(80000);
         element(by.xpath(".//*[@id='header']/div/div/div/div/global-nav/ul/li[2]/a")).click();
-        await delay(30000);
+        await delay(150000);
     });
     When('HPF-0030 click on demand page', async () => {
         await delay(5000);
