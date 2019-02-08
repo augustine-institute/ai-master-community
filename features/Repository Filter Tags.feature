@@ -8,7 +8,7 @@ Feature: CMM-RTP-004-Repository Test plan
 
   # from at document
   Scenario: Repository Filter Tags
-  Then TS-0130 click on video product ondemand page without user
+  When FCF-0010 navigate to community page
   Then FCF-0010 Enter Parish user name and password
   Then FCF-0020 Feature and group tab in dashboard menu
   When REPO-002-A Work Area and Template Catalog is displayed
