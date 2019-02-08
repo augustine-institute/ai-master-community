@@ -8,7 +8,7 @@ Feature: CMM-RTP-005-Repository Test plan
 
   # from at document
   Scenario: Add and Delete the tag
-  Then TS-0130 click on video product ondemand page without user
+  When FCF-0010 navigate to community page
   Then FCF-0010 Enter Parish user name and password
   When FCF-0030 naviagte to listen link and click on audio books
   Then FCF-0040 click on image in audio books
