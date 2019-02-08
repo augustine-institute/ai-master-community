@@ -23,7 +23,7 @@ defineSupportCode(function ({Given, Then, When}) {
         await delay(15000);
     });
     When('FCF-0010 navigate to community page', async  () => {
-        await delay(10000);
+        await delay(60000);
         element(by.xpath(".//*[@id='header']/div/div/div/div/global-nav/ul/li[2]/a")).click();
         await delay(30000);
     });
@@ -133,6 +133,8 @@ defineSupportCode(function ({Given, Then, When}) {
    });
     Then('FCF-0080 move a published feature into unpublished list', async () => {
         await delay(10000);
+        await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/div[1]/div[2]/ul/li[3]/promo-unit-dashboard-wrapper/div/div/div/div/a"))).to.eventually.exist;
+        await delay(2000);
         element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/div[1]/div[2]/ul/li[3]/promo-unit-dashboard-wrapper/div/div/div/div/a")).click();
         await delay(10000);
     });
@@ -143,35 +145,27 @@ defineSupportCode(function ({Given, Then, When}) {
     });
     Then('FCF-0070 change the name Title ,text color and click on cencle button', async () => {
         await delay(10000);
-         element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/name-and-description/div[1]/input")).click();
-         await delay(8000);
-         element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/name-and-description/div[1]/input")).sendKeys('mind')
-         await delay(5000)
-         element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).click();
-         await delay(5000)
-         element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).sendKeys('sasicharah');
-         await delay(5000);
+         element(by.xpath(".//*[@placeholder='Custom Content Name']")).sendKeys('mind')
+         await delay(2000);
+         element(by.xpath(".//*[@data-placeholder='Type the description for your Feature here']")).sendKeys('sasicharah');
+         await delay(2000);
          element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-position-selector/div/div/div[2]/div[1]/div[2]/div")).click();
-         await delay(8000);
+         await delay(2000);
          element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/background-color/div/div[2]/ul/li[8]/a")).click();
-         await delay(8000);
+         await delay(2000);
          element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/div[2]/a")).click();
          await delay(15000);
     });
     Then('FCF-0070 change the name Title ,text color and click on Update button', async () => {
          await delay(10000);
-         element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/name-and-description/div[1]/input")).click();
-         await delay(8000);
-         element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/name-and-description/div[1]/input")).sendKeys('mind')
-         await delay(5000)
-         element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).click();
-         await delay(5000)
-         element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).sendKeys('sasicharah');
-         await delay(5000);
+         element(by.xpath(".//*[@placeholder='Custom Content Name']")).sendKeys('mind')
+         await delay(2000)
+         element(by.xpath(".//*[@data-placeholder='Type the description for your Feature here']")).sendKeys('sasicharah');
+         await delay(2000);
          element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-position-selector/div/div/div[2]/div[1]/div[2]/div")).click();
-         await delay(8000);
+         await delay(3000);
          element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/background-color/div/div[2]/ul/li[8]/a")).click();
-         await delay(8000);
+         await delay(3000);
          await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/input"))).to.eventually.exist;
          await delay(2000);
         element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/input")).click();
@@ -179,11 +173,11 @@ defineSupportCode(function ({Given, Then, When}) {
     });
     Then('FCF-0090 Delete feature', async () =>{
         element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div/a[2]")).click();
-        await delay(8000); 
+        await delay(4000); 
         await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div/div/div[2]/div/div/p[2]/a"))).to.eventually.exist;
         await delay(2000);
         element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div/div/div[2]/div/div/p[2]/a")).click();
-        await delay(8000);
+        await delay(4000);
   });
    Then('FCF-0120 click on Discussion group' , async () => {
         element(by.xpath("html/body/div[5]/div/div/div[2]/div[2]/div/div[2]/div[1]")).click();
@@ -600,9 +594,7 @@ Then('FCF-0110 click on create feature and discussion group', async () => {
     await delay(8000);
 });
 Then('FCF-0260 click on new button and feature content option is displayed', async () => {
-    await delay(5000);
-    browser.navigate().refresh();
-    await delay(20000);
+    await delay(10000);
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[1]/h4/a/span/div/div[2]/span/a")).click();
     await delay(5000);
     await expect(browser.findElement(by.xpath(".//*[@id='workspace']/div[1]/h4/a/span/div/div[2]/span/div/ul/li[1]/modal-link/a/span"))).to.eventually.exist;
@@ -610,47 +602,48 @@ Then('FCF-0260 click on new button and feature content option is displayed', asy
     element(by.xpath(".//*[@id='workspace']/div[1]/h4/a/span/div/div[2]/span/div/ul/li[1]/modal-link/a/span")).click();
     await delay(8000);
 });
+Then('TS-0130 click on video product ondemand page without user', async () => {
+	await delay(60000);
+	element(by.xpath(".//*[@id='scroll-top']/div/div/trending-topics/div[2]/div/div/div/div/div[7]/a/div/div/div[2]/div")).click();
+	await delay(1000);
+	browser.waitForAngular();
+	await delay(5000);
+})
 Then('FCF-0260 Feature Editor is displayed', async () => {
     await delay(10000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/name-and-description/div[1]/div"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath(".//*[@class='header']"))).to.eventually.exist;
     await delay(2000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[2]"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath(".//*[@placeholder='Custom Content Name']"))).to.eventually.exist;
     await delay(2000);
 });
 When('FCF-0260 create a feature using a Youtube embed code', async () => {
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/name-and-description/div[1]/input")).sendKeys("youtube");
-    await delay(8000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).click();
-    await delay(5000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).sendKeys("youtubecode");
-    await delay(8000);
+    element(by.xpath(".//*[@placeholder='Custom Content Name']")).sendKeys("youtube");
+    await delay(2000);
+    element(by.xpath(".//*[@data-placeholder='Type the description for your Feature here']")).sendKeys("youtubecode");
+    await delay(2000);
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-type-selector/div/div/div[2]/div[1]/div[2]/div")).click();
-    await delay(8000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-embed/div[2]/div[2]/div/textarea")).sendKeys('<iframe width="560" height="315" src="https://www.youtube.com/embed/d57hAb9FJoE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+    await delay(2000);
+    element(by.xpath(".//*[@placeholder='Paste video embed code here']")).sendKeys('<iframe width="560" height="315" src="https://www.youtube.com/embed/d57hAb9FJoE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
     await delay(8000);
 });
 When('FCF-0270 create a feature using a vimeo code', async () => {
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/name-and-description/div[1]/input")).sendKeys("Vimeo");
+    element(by.xpath(".//*[@placeholder='Custom Content Name']")).sendKeys("Vimeo");
     await delay(8000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).click();
-    await delay(5000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).sendKeys("vimeocode");
+    element(by.xpath(".//*[@data-placeholder='Type the description for your Feature here']")).sendKeys("vimeocode");
     await delay(8000);
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-type-selector/div/div/div[2]/div[1]/div[2]/div")).click();
     await delay(8000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-embed/div[2]/div[2]/div/textarea")).sendKeys('<iframe src="https://player.vimeo.com/video/76979871?embedparameter=value" width="640" height="360" frameborder="0" allowfullscreen></iframe>');
+    element(by.xpath(".//*[@placeholder='Paste video embed code here']")).sendKeys('<iframe src="https://player.vimeo.com/video/76979871?embedparameter=value" width="640" height="360" frameborder="0" allowfullscreen></iframe>');
     await delay(8000);
 });
 When('FCF-0280 create a feature using a Soundcloud embed code', async () => {
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/name-and-description/div[1]/input")).sendKeys("Soundcloudembed");
+    element(by.xpath(".//*[@placeholder='Custom Content Name']")).sendKeys("Soundcloudembed");
     await delay(8000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).click();
-    await delay(5000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).sendKeys("Soundcloud embed code");
+    element(by.xpath(".//*[@data-placeholder='Type the description for your Feature here']")).sendKeys("Soundcloud embed code");
     await delay(8000);
     element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-type-selector/div/div/div[2]/div[1]/div[3]/div")).click();
     await delay(8000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-embed/div[3]/div[2]/div/textarea")).sendKeys('<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/328259811&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
+    element(by.xpath(".//*[@placeholder='Paste audio embed code here']")).sendKeys('<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/328259811&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
     await delay(8000);
 });
 Then('FCF-0280 parish admin community page is displayed' , async () => {
