@@ -43,6 +43,17 @@ defineSupportCode(function ({Given, Then, When}) {
         element(by.xpath(".//*[@id='header']/div/div/div/div/ul/profile-menu/div/div/span/div/login/form/button")).click();
         await delay(25000);
     });
+    Then('FCF-0020 Enter Parish user name and password', async  () => {
+        await delay(5000);
+        element(by.xpath(".//*[@id='simple-dropdown']")).click();
+        await delay(5000);
+        element(by.xpath(".//*[@id='header']/div/div/div/div/ul/profile-menu/div/div/span/div/login/form/input[1]")).sendKeys("catholic@gmail.com");
+        await delay(1000);
+        element(by.xpath(".//*[@id='header']/div/div/div/div/ul/profile-menu/div/div/span/div/login/form/input[2]")).sendKeys("Faith@123");
+        await delay(1000);
+        element(by.xpath(".//*[@id='header']/div/div/div/div/ul/profile-menu/div/div/span/div/login/form/button")).click();
+        await delay(25000);
+    });
     When('FCF-0020 navigate to community page and Enter parish user name details', async  () => {
         await delay(25000);
         element(by.xpath(".//*[@id='header']/div/div[1]/div/div/global-nav/ul/li[2]/a")).click();
@@ -549,8 +560,6 @@ Then('FCF-0100 naviagte to read link and click on Nonfiction' , async () => {
     await delay(5000);
     element(by.xpath(".//*[@id='header']/div/div[3]/div/main-nav/ul/li[4]/segmented-menu-item/div/segmented-links/div/div[1]/a")).click();
     await delay(20000);
-    await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/segmented-page/div/div[1]/segment/div[2]/div/stripe/div/div/div[1]/div[1]/h3"))).to.eventually.exist;
-    await delay(2000);
     element(by.xpath(".//*[@id='scroll-top']/div/segmented-page/div/div[1]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[13]/div/a/img")).click();
     await delay(20000);
 });
@@ -825,7 +834,7 @@ Then('REPO-014 Card Description Overflow', async () => {
 })
 Then('REPO-021 Click on Submit As Template', async () => {
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div[2]/a[3]")).click();
-    await delay(10000);
+    await delay(15000);
     element(by.xpath("html/body/div[5]/div/div/div[4]/input")).click();
     await delay(10000);
 });
