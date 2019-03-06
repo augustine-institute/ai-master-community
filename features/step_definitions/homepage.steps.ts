@@ -989,12 +989,8 @@ When('REPO-006 Remove Filters and Verify', async () => {
     await delay(2000);
 });
 Then('REPO-006 click on Search icon', async () => {
-    element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[1]/div/form/div[4]/input")).sendKeys('AUG');
-    await delay(15000); 
-    browser.executeScript('window.scrollTo(1428,899)');
-    await delay(2000);
-    element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[1]/div/form/div[4]/i")).click();
-    await delay(10000); 
+    element(by.xpath("/html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[1]/div/form/div[4]/input")).sendKeys('AUG');
+    await delay(15000);
 });
 When('REPO-017 Click on Review', async () => {
     await delay(5000);
