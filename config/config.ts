@@ -35,7 +35,7 @@ export let config: Config = {
     capabilities: {
         browserName: 'chrome',
         'shardTestFiles': true,
-         'maxInstances': 1
+         'maxInstances': 2
     },
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
