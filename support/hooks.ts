@@ -20,7 +20,7 @@ export const expect:any = chai.expect;
 
 defineSupportCode(function ({registerHandler, registerListener, After,Before, setDefaultTimeout}) {
     
-    setDefaultTimeout(100 * 1000);
+    setDefaultTimeout(300 * 1000);
     let jsonReports = process.cwd() + "/reports/json";
     let htmlReports = process.cwd() + "/reports/html";
     let targetJson = jsonReports + "/cucumber_report.json";
