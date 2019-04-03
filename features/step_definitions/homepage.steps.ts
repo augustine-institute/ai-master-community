@@ -122,25 +122,25 @@ defineSupportCode(function ({Given, Then, When}) {
         await delay(8000);
    });
    Then('FCF-0060 create feature contant', async () =>{
-        element(by.xpath("html/body/div[5]/div/div/div[2]/div[2]/div/div[1]/div[1]")).click();
+        element(by.xpath("html/body/div[3]/div/div/div[2]/div[2]/div/div[1]/div[1]")).click();
         await delay(5000);
-        await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/div[2]/div[3]/a"))).to.eventually.exist;
+        await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/div[2]/div[3]/a"))).to.eventually.exist;
         await delay(2000);
-        element(by.xpath("html/body/div[5]/div/div/div[2]/div[3]/a")).click();
+        element(by.xpath("html/body/div[3]/div/div/div[2]/div[3]/a")).click();
         await delay(5000);
    });
    Then('FCF-0060 click on create community feature', async () => {
-        await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/div[2]/div/div[2]/a[1]"))).to.eventually.exist;
+        await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/div[2]/div/div[2]/a[1]"))).to.eventually.exist;
         await delay(2000);
-        element(by.xpath("html/body/div[5]/div/div/div[2]/div/div[2]/a[1]")).click();
+        element(by.xpath("html/body/div[3]/div/div/div[2]/div/div[2]/a[1]")).click();
         await delay(5000);
    });
    Then('FCF-0060 click on view community feature', async () => {
-        await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/div[2]/div/div[2]/a[1]"))).to.eventually.exist;
+        await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/div[2]/div/div[2]/a[1]"))).to.eventually.exist;
         await delay(2000);
-        await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/div[2]/div/div[2]/a[2]"))).to.eventually.exist;
+        await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/div[2]/div/div[2]/a[2]"))).to.eventually.exist;
         await delay(2000);
-        element(by.xpath("html/body/div[5]/div/div/div[2]/div/div[2]/a[1]")).click();
+        element(by.xpath("html/body/div[3]/div/div/div[2]/div/div[2]/a[1]")).click();
         await delay(25000);
   });
    When('FCF-0070 Move a feature into the Published', async () =>{
@@ -175,7 +175,9 @@ defineSupportCode(function ({Given, Then, When}) {
         await delay(10000);
     });
     Then('FCF-0070 click on Edit feature in unpublish list', async () =>{
-        await delay(5000);
+        await delay(15000);
+        browser.executeScript('window.scrollTo(204, 170)');
+        await delay(10000);
          element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div/modal-link/a/span")).click();
          await delay(8000);
     });
@@ -185,11 +187,11 @@ defineSupportCode(function ({Given, Then, When}) {
          await delay(2000);
          element(by.xpath(".//*[@data-placeholder='Type the description for your Feature here']")).sendKeys('sasicharah');
          await delay(2000);
-         element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-position-selector/div/div/div[2]/div[1]/div[2]/div")).click();
+         element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-position-selector/div/div/div[2]/div[1]/div[2]/div")).click();
          await delay(2000);
-         element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/background-color/div/div[2]/ul/li[8]/a")).click();
+         element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/background-color/div/div[2]/ul/li[8]/a")).click();
          await delay(2000);
-         element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/div[2]/a")).click();
+         element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/div[2]/a")).click();
          await delay(15000);
     });
     Then('FCF-0070 change the name Title ,text color and click on Update button', async () => {
@@ -198,13 +200,13 @@ defineSupportCode(function ({Given, Then, When}) {
          await delay(2000)
          element(by.xpath(".//*[@data-placeholder='Type the description for your Feature here']")).sendKeys('sasicharah');
          await delay(2000);
-         element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-position-selector/div/div/div[2]/div[1]/div[2]/div")).click();
+         element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-position-selector/div/div/div[2]/div[1]/div[2]/div")).click();
          await delay(3000);
-         element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/background-color/div/div[2]/ul/li[8]/a")).click();
+         element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/background-color/div/div[2]/ul/li[8]/a")).click();
          await delay(3000);
-         await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/input"))).to.eventually.exist;
+         await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/input"))).to.eventually.exist;
          await delay(2000);
-        element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/input")).click();
+        element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/input")).click();
         await delay(15000);
     });
     Then('FCF-0090 Delete feature', async () =>{
@@ -216,69 +218,70 @@ defineSupportCode(function ({Given, Then, When}) {
         await delay(4000);
   });
    Then('FCF-0120 click on Discussion group' , async () => {
-        element(by.xpath("html/body/div[5]/div/div/div[2]/div[2]/div/div[2]/div[1]")).click();
+        await delay(4000); 
+        element(by.xpath("/html/body/div[3]/div/div/div[2]/div[2]/div/div[2]/div[1]")).click();
         await delay(3000);
-        await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/div[2]/div[3]/a"))).to.eventually.exist;
+        await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/div[2]/div[3]/a"))).to.eventually.exist;
         await delay(2000);
-        element(by.xpath("html/body/div[5]/div/div/div[2]/div[3]/a")).click();
+        element(by.xpath("html/body/div[3]/div/div/div[2]/div[3]/a")).click();
         await delay(3000);
    });
   Then('FCF-0120 Click on create discussion group' , async () => {
-        await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/div[2]/div/div[2]/a[1]"))).to.eventually.exist;
+        await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/div[2]/div/div[2]/a[1]"))).to.eventually.exist;
         await delay(2000);
-        await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/div[2]/div/div[2]/a[2]"))).to.eventually.exist;
+        await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/div[2]/div/div[2]/a[2]"))).to.eventually.exist;
         await delay(2000);
-        element(by.xpath("html/body/div[5]/div/div/div[2]/div/div[2]/a[1]")).click();
+        element(by.xpath("html/body/div[3]/div/div/div[2]/div/div[2]/a[1]")).click();
         await delay(15000);
   });
   Then('FCF-0120 click on View group' , async () => {
     await delay(2000);
-        await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/div[2]/div/div[2]/a[1]"))).to.eventually.exist;
+        await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/div[2]/div/div[2]/a[1]"))).to.eventually.exist;
         await delay(2000);
-        await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/div[2]/div/div[2]/a[2]"))).to.eventually.exist;
+        await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/div[2]/div/div[2]/a[2]"))).to.eventually.exist;
         await delay(2000);
-        element(by.xpath("html/body/div[5]/div/div/div[2]/div/div[2]/a[1]")).click();
+        element(by.xpath("html/body/div[3]/div/div/div[2]/div/div[2]/a[1]")).click();
         await delay(8000);
    });
 Then('FCF-0130 Edit the group' , async () => {
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/div[3]/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div/modal-link/a/span")).click();
     await delay(10000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/create-group-view/div[2]/div/a"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/create-group-view/div[2]/div/a"))).to.eventually.exist;
     await delay(2000);
-    element("html/body/div[5]/div/div/promo-unit-modal/div[3]/create-group-view/div[1]/ul/li[2]/a/tab-heading/div/h3").click();
+    element("html/body/div[3]/div/div/promo-unit-modal/div[3]/create-group-view/div[1]/ul/li[2]/a/tab-heading/div/h3").click();
     await delay(3000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/create-group-view/div[2]/div/a"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/create-group-view/div[2]/div/a"))).to.eventually.exist;
     await delay(2000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/create-group-view/div[1]/ul/li[3]/a/tab-heading/div/h3")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/create-group-view/div[1]/ul/li[3]/a/tab-heading/div/h3")).click();
     await delay(5000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/create-group-view/div[2]/div/a"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/create-group-view/div[2]/div/a"))).to.eventually.exist;
     await delay(2000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/a/i")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/a/i")).click();
 });
 Then('FCF-0160 click on Add session to existing discussion group', async () =>{
-    element(by.xpath("html/body/div[5]/div/div/div[2]/div[2]/div/div[3]/div[1]")).click();
+    element(by.xpath("html/body/div[3]/div/div/div[2]/div[2]/div/div[3]/div[1]")).click();
     await delay(5000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/div[2]/div[3]/a"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/div[2]/div[3]/a"))).to.eventually.exist;
     await delay(2000);
-    element(by.xpath("html/body/div[5]/div/div/div[2]/div[3]/a")).click();
+    element(by.xpath("html/body/div[3]/div/div/div[2]/div[3]/a")).click();
     await delay(5000);
 });
 Then('FCF-0160 select group and click on Addsession', async () =>{
     element(by.xpath(".//*[@id='promoUnitSelect']")).click();
     await delay(5000);
-    element(by.xpath("html/body/div[5]/div/div/div[2]/div/span/div/ul/li[1]/div")).click();
+    element(by.xpath("html/body/div[3]/div/div/div[2]/div/span/div/ul/li[1]/div")).click();
     await delay(3000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/div[2]/div/div[3]/a[1]"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/div[2]/div/div[3]/a[1]"))).to.eventually.exist;
     await delay(2000);
-    element(by.xpath("html/body/div[5]/div/div/div[2]/div/div[3]/a[1]")).click();
+    element(by.xpath("html/body/div[3]/div/div/div[2]/div/div[3]/a[1]")).click();
     await delay(15000);
 });
 When('FCF-0160 click on View group', async () =>{
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/div[2]/div/div[3]/a[1]"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/div[2]/div/div[3]/a[1]"))).to.eventually.exist;
     await delay(2000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/div[2]/div/div[3]/a[2]"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/div[2]/div/div[3]/a[2]"))).to.eventually.exist;
     await delay(2000);
-    element(by.xpath("html/body/div[5]/div/div/div[2]/div/div[3]/a[1]")).click();
+    element(by.xpath("html/body/div[3]/div/div/div[2]/div/div[3]/a[1]")).click();
     await delay(10000);
 });
 Then('FCF-0130 click on edit button' , async () => {
@@ -289,68 +292,68 @@ Then('FCF-0130 click on edit button' , async () => {
     await delay(15000);
 });
 Then('FCF-0130 click on managesessions and create a session using Youtube' , async () => {
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/ul/li[2]/a/tab-heading/div/h3")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/ul/li[2]/a/tab-heading/div/h3")).click();
     await delay(10000);
-    await expect(browser.findElement(by.xpath("/html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[1]/div"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("/html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[1]/div"))).to.eventually.exist;
     await delay(8000);
-    element(by.xpath("/html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/div[2]/a/span[2]")).click();
+    element(by.xpath("/html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/div[2]/a/span[2]")).click();
     await delay(5000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[1]/input")).sendKeys("Formed");
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[1]/input")).sendKeys("Formed");
     await delay(5000);
-    element(by.xpath("/html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).sendKeys("fOrmed.org");
+    element(by.xpath("/html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).sendKeys("fOrmed.org");
     await delay(5000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-type-selector/div/div/div[2]/div[1]/div[2]/div")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-type-selector/div/div/div[2]/div[1]/div[2]/div")).click();
     await delay(5000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-embed/div[2]/div[2]/div/textarea")).sendKeys('<iframe width="560" height="315" src="https://www.youtube.com/embed/uHUTbq-j0UU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-embed/div[2]/div[2]/div/textarea")).sendKeys('<iframe width="560" height="315" src="https://www.youtube.com/embed/uHUTbq-j0UU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
     await delay(10000);
 });
 Then('FCF-0140 Click on manage sessions' , async () => {
     await delay(10000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/ul/li[2]/a/tab-heading/div/h3"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/ul/li[2]/a/tab-heading/div/h3"))).to.eventually.exist;
     await delay(2000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/ul/li[2]/a/tab-heading/div/h3")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/ul/li[2]/a/tab-heading/div/h3")).click();
     await delay(10000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/div[2]/a/span[2]"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/div[2]/a/span[2]"))).to.eventually.exist;
     await delay(2000);
 });
 Then('FCF-0130 click on save button', async () => {
     await delay(10000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[2]/button")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[2]/button")).click();
     await delay(30000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[1]/i")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[1]/i")).click();
     await delay(10000);
 });
 Then('FCF-0140 create another session' , async () => {
     await delay(20000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/ul/li[2]/a/tab-heading/div/h3")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/ul/li[2]/a/tab-heading/div/h3")).click();
     await delay(10000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/div[2]/a/span[2]"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/div[2]/a/span[2]"))).to.eventually.exist;
     await delay(8000);
-    element(by.xpath("/html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/div[2]/a/span[2]")).click();
+    element(by.xpath("/html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/div[2]/a/span[2]")).click();
     await delay(5000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[1]/input")).sendKeys("Catholic");
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[1]/input")).sendKeys("Catholic");
     await delay(5000);
-    element(by.xpath("/html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).sendKeys("So much content, it’s my go-to tool for Catholic learning. 5 stars!");
+    element(by.xpath("/html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).sendKeys("So much content, it’s my go-to tool for Catholic learning. 5 stars!");
     await delay(5000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-embed/div[2]/div[2]/div/textarea")).sendKeys('<iframe src="https://player.vimeo.com/video/76979871?embedparameter=value" width="640" height="360" frameborder="0" allowfullscreen></iframe>');
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-embed/div[2]/div[2]/div/textarea")).sendKeys('<iframe src="https://player.vimeo.com/video/76979871?embedparameter=value" width="640" height="360" frameborder="0" allowfullscreen></iframe>');
     await delay(10000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[2]/button")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[2]/button")).click();
     await delay(20000);
 });
 Then('FCF-0140 create a session using Vimeo', async () => {
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/ul/li[2]/a/tab-heading/div/h3")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/ul/li[2]/a/tab-heading/div/h3")).click();
     await delay(10000);
-    await expect(browser.findElement(by.xpath("/html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[1]/div"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("/html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[1]/div"))).to.eventually.exist;
     await delay(5000);          
-    element(by.xpath("/html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/div[2]/a/span[2]")).click();
+    element(by.xpath("/html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/div[2]/a/span[2]")).click();
     await delay(5000);               
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[1]/input")).sendKeys("Formed");
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[1]/input")).sendKeys("Formed");
     await delay(5000);
-    element(by.xpath("/html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).sendKeys("I’m so excited that FORMED has an app! As someone who has come back to the Catholic faith, FORMED has been such an important part of my love for the Church.");
+    element(by.xpath("/html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).sendKeys("I’m so excited that FORMED has an app! As someone who has come back to the Catholic faith, FORMED has been such an important part of my love for the Church.");
     await delay(10000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-type-selector/div/div/div[2]/div[1]/div[2]/div")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-type-selector/div/div/div[2]/div[1]/div[2]/div")).click();
     await delay(15000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-embed/div[2]/div[2]/div/textarea")).sendKeys('<iframe src="https://player.vimeo.com/video/76979871?embedparameter=value" width="640" height="360" frameborder="0" allowfullscreen></iframe>');
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-embed/div[2]/div[2]/div/textarea")).sendKeys('<iframe src="https://player.vimeo.com/video/76979871?embedparameter=value" width="640" height="360" frameborder="0" allowfullscreen></iframe>');
     await delay(15000);
 });
 When('FCF-0140 click on dropdown from manage sessions', async() => {
@@ -359,31 +362,31 @@ When('FCF-0140 click on dropdown from manage sessions', async() => {
     await delay(10000);
 });
 Then('FCF-0140 Manage session  dropdown is displayed', async() => {
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/span/div/ul/li[4]/div"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/span/div/ul/li[4]/div"))).to.eventually.exist;
     await delay(2000);
 });
     Then('FCF-0140 click on oraganize sessions', async() => {
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/ul/li[3]/a/tab-heading/div/h3")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/ul/li[3]/a/tab-heading/div/h3")).click();
     await delay(5000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[3]/div/organize-sessions-view/div[2]/div/div/ul/li[1]/div[2]/div[2]/a/i"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[3]/div/organize-sessions-view/div[2]/div/div/ul/li[1]/div[2]/div[2]/a/i"))).to.eventually.exist;
     await delay(2000);
 });
 Then('FCF-0150 delete the session' , async () => {
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[3]/div/organize-sessions-view/div[2]/div/div/ul/li[1]/div[2]/div[2]/a/i")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[3]/div/organize-sessions-view/div[2]/div/div/ul/li[1]/div[2]/div[2]/a/i")).click();
     await delay(5000);
-    await expect(browser.findElement(by.xpath("html/body/div[6]/div/div/div[4]/input"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[4]/div/div/div[4]/input"))).to.eventually.exist;
     await delay(2000);
-    element(by.xpath("html/body/div[6]/div/div/div[4]/input")).click();
+    element(by.xpath("html/body/div[4]/div/div/div[4]/input")).click();
     await delay(10000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/ul/li[2]/a/tab-heading/div/h3")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/ul/li[2]/a/tab-heading/div/h3")).click();
     await delay(10000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[1]/i")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[1]/i")).click();
     await delay(10000);
 });
 When('FCF-0140 click on save button', async() => {
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/create-group-view/div[2]/button")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/create-group-view/div[2]/button")).click();
     await delay(10000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/create-group-view/div[2]/div/a")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/create-group-view/div[2]/div/a")).click();
     await delay(10000);
 });
 When('FCF-0120 navigate to community page', async() => {
@@ -407,19 +410,19 @@ When('FCF-0120 navigate to community page', async() => {
     await delay(15000);
 });
 Then('FCF-0140 create a session using Audio', async () => {
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/ul/li[2]/a/tab-heading/div/h3")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/ul/li[2]/a/tab-heading/div/h3")).click();
     await delay(10000);
-    await expect(browser.findElement(by.xpath("/html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[1]/div"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("/html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[1]/div"))).to.eventually.exist;
     await delay(2000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/div[2]/a/span[1]")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/div[2]/a/span[1]")).click();
     await delay(10000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[1]/input")).sendKeys("Formed");
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[1]/input")).sendKeys("Formed");
     await delay(5000);
-    element(by.xpath("/html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).sendKeys("I’m so excited that FORMED has an app! As someone who has come back to the Catholic faith, FORMED has been such an important part of my love for the Church.");
+    element(by.xpath("/html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/name-and-description/div[2]/ng-quill-editor/div/div/div[1]")).sendKeys("I’m so excited that FORMED has an app! As someone who has come back to the Catholic faith, FORMED has been such an important part of my love for the Church.");
     await delay(10000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-type-selector/div/div/div[2]/div[1]/div[3]/div")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-type-selector/div/div/div[2]/div[1]/div[3]/div")).click();
     await delay(10000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-embed/div[3]/div[2]/div/textarea")).sendKeys('<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/328259811&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-embed/div[3]/div[2]/div/textarea")).sendKeys('<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/328259811&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
     await delay(10000);
 });
 Then('FCF-0170 Click on group roster and verify', async() => {
@@ -477,11 +480,11 @@ When('FCF-0210 enter the text in replay textarea', async() => {
 });
 When('FCF-0140 click on save button and cencel button', async() => {
     await delay(15000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[2]/button"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[2]/button"))).to.eventually.exist;
     await delay(2000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[2]/button")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[2]/button")).click();
     await delay(15000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[1]/i")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[1]/i")).click();
     await delay(10000);
 });
 When('FCF-0290 delete the Comments', async() => {
@@ -652,7 +655,7 @@ When('FCF-0260 create a feature using a Youtube embed code', async () => {
     await delay(2000);
     element(by.xpath(".//*[@data-placeholder='Type the description for your Feature here']")).sendKeys("youtubecode");
     await delay(2000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-type-selector/div/div/div[2]/div[1]/div[2]/div")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-type-selector/div/div/div[2]/div[1]/div[2]/div")).click();
     await delay(2000);
     element(by.xpath(".//*[@placeholder='Paste video embed code here']")).sendKeys('<iframe width="560" height="315" src="https://www.youtube.com/embed/d57hAb9FJoE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
     await delay(8000);
@@ -662,7 +665,7 @@ When('FCF-0270 create a feature using a vimeo code', async () => {
     await delay(8000);
     element(by.xpath(".//*[@data-placeholder='Type the description for your Feature here']")).sendKeys("vimeocode");
     await delay(8000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-type-selector/div/div/div[2]/div[1]/div[2]/div")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-type-selector/div/div/div[2]/div[1]/div[2]/div")).click();
     await delay(8000);
     element(by.xpath(".//*[@placeholder='Paste video embed code here']")).sendKeys('<iframe src="https://player.vimeo.com/video/76979871?embedparameter=value" width="640" height="360" frameborder="0" allowfullscreen></iframe>');
     await delay(8000);
@@ -672,7 +675,7 @@ When('FCF-0280 create a feature using a Soundcloud embed code', async () => {
     await delay(8000);
     element(by.xpath(".//*[@data-placeholder='Type the description for your Feature here']")).sendKeys("Soundcloud embed code");
     await delay(8000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-type-selector/div/div/div[2]/div[1]/div[3]/div")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-type-selector/div/div/div[2]/div[1]/div[3]/div")).click();
     await delay(8000);
     element(by.xpath(".//*[@placeholder='Paste audio embed code here']")).sendKeys('<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/328259811&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
     await delay(8000);
@@ -692,9 +695,9 @@ Then('FCF-0280 parish admin community page is displayed' , async () => {
 });
 Then('FCF-0280 Click on save button', async () => {
     await delay(5000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/input"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/input"))).to.eventually.exist;
     await delay(2000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/input")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/input")).click();
     await delay(15000);
 });
 When('REPO-002-A Work Area and Template Catalog is displayed', async () => {
@@ -843,9 +846,9 @@ When('REPO-014 Click on View more button', async () => {
     await delay(10000);
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[2]/div[2]/span/modal-link/a/span")).click();
     await delay(10000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/div[2]/div[2]/div/div"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/div[2]/div[2]/div/div"))).to.eventually.exist;
     await delay(5000);
-    element(by.xpath("html/body/div[5]/div/div/div[1]/i")).click();
+    element(by.xpath("html/body/div[3]/div/div/div[1]/i")).click();
     await delay(8000); 
 });
 Then('REPO-014 Card Description Overflow', async () => {
@@ -860,7 +863,7 @@ Then('REPO-021 Click on Submit As Template', async () => {
     await delay(5000);
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div[2]/a[3]")).click();
     await delay(15000);
-    element(by.xpath("html/body/div[5]/div/div/div[4]/input")).click();
+    element(by.xpath("html/body/div[3]/div/div/div[4]/input")).click();
     await delay(10000);
 });
 When('REPO-015 click on USE icon and verify', async () => {
@@ -996,16 +999,16 @@ When('REPO-017 Click on Review', async () => {
     await delay(5000);
     browser.executeScript('window.scrollTo(443,57)');
     await delay(2000);
-    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div/div[1]/div[2]/span/a")).click();
-    await delay(15000);                    
+    element(by.xpath("/html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[2]/span/a/div ")).click();
+    await delay(15000);                   
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[1]/div[2]/span/div/ul/li[2]/a")).click();
     await delay(10000);
 });
 Then('REPO-017 Group Editor is displayed', async () => {
     await delay(15000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/name-and-description/div[1]/input"))).to.eventually.exist;
-    await delay(2000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[1]/i")).click();
+    await expect(browser.findElement(by.xpath("/html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/ul/li[1]/a/tab-heading/div/h3"))).to.eventually.exist;
+    await delay(2000);                            
+    element(by.xpath("/html/body/div[3]/div/div/promo-unit-modal/div[1]/i")).click();
     await delay(10000);
 });
 Then('REPO-016 Click on Feature option', async () => {
@@ -1033,9 +1036,9 @@ When('REPO-018 Click on Review for Feature Editor', async () => {
 });
 Then('REPO-018 Feature Editor is displayed', async () => {
     await delay(5000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div"))).to.eventually.exist;
     await delay(2000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[1]/i")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[1]/i")).click();
     await delay(10000); 
 });
 Then('REPO-043 Click on Approve button', async () => {
@@ -1071,11 +1074,11 @@ Then('REPO-019 Click on Edit button for group', async () => {
     await delay(5000);
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div[2]/modal-link/a")).click();
     await delay(15000); 
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[1]/div/manage-group-view/form/group-settings/div/div[2]/div[2]/div[1]/div[1]/div")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[1]/div/manage-group-view/form/group-settings/div/div[2]/div[2]/div[1]/div[1]/div")).click();
     await delay(10000); 
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[2]/button")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[2]/button")).click();
     await delay(10000); 
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[1]/i")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[1]/i")).click();
     await delay(10000); 
 });
 Then('REPO-019 Click on Edit button for Feature', async () => {
@@ -1084,66 +1087,66 @@ Then('REPO-019 Click on Edit button for Feature', async () => {
     await delay(5000);
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div[2]/modal-link/a")).click();
     await delay(15000); 
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-position-selector/div/div/div[2]/div[1]/div[1]/div")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/media-position-selector/div/div/div[2]/div[1]/div[1]/div")).click();
     await delay(10000); 
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/input")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-feature-view/form/input")).click();
     await delay(15000); 
 });
 Then('REPO-025 Add a Tag in Group Editor', async () => {
     await delay(5000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/content-tags/div/tags-input/div/div"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/content-tags/div/tags-input/div/div"))).to.eventually.exist;
     await delay(2000);                         
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/content-tags/div/tags-input/div/div/input")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/content-tags/div/tags-input/div/div/input")).click();
     await delay(10000); 
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/content-tags/div/tags-input/div/div/input")).sendKeys('session');
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/content-tags/div/tags-input/div/div/input")).sendKeys('session');
     await delay(10000); 
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/background-color/div/div[1]")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/div/div[1]/div/div/background-color/div/div[1]")).click();
     await delay(10000); 
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
     await delay(10000); 
 });
 Then('REPO-025 Add a Tag in Feature Editor', async () => {
     await delay(5000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div"))).to.eventually.exist;
     await delay(2000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div/input")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div/input")).click();
     await delay(10000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div/input")).sendKeys('Advent');
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div/input")).sendKeys('Advent');
     await delay(10000); 
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/background-color/div/div[1]")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/background-color/div/div[1]")).click();
     await delay(5000); 
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
     await delay(10000); 
 });
 Then('REPO-026 Add Additional tag', async () => {
     await delay(5000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div"))).to.eventually.exist;
     await delay(2000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div/input")).sendKeys('Formed');
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div/input")).sendKeys('Formed');
     await delay(10000); 
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/background-color/div/div[1]")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/background-color/div/div[1]")).click();
     await delay(5000); 
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
     await delay(10000); 
 });
 When('REPO-027 Select matching Tag', async () => {
     await delay(5000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div"))).to.eventually.exist;
     await delay(2000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div")).sendKeys('Aug');
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div")).sendKeys('Aug');
     await delay(10000); 
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/auto-complete/div/ul/li/ti-autocomplete-match/ng-include/span")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/auto-complete/div/ul/li/ti-autocomplete-match/ng-include/span")).click();
     await delay(10000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input")).click();
     await delay(10000);
 });
 Then('REPO-029 Delete the second tag', async () => {
     await delay(5000);
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div"))).to.eventually.exist;
     await delay(5000);
-    element(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div/ul/li[2]/ti-tag-item/ng-include/a")).click();
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/div[1]/div/content-tags/div/tags-input/div/div/ul/li[2]/ti-tag-item/ng-include/a")).click();
     await delay(10000);    
-    await expect(browser.findElement(by.xpath("html/body/div[5]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/manage-template-view/form/input"))).to.eventually.exist;
     await delay(2000);  
 });
 Then('REPO-030 Tags are displayed alphabetical order', async () => {
@@ -1209,16 +1212,14 @@ When('REPO-011 click on Hide Tags', async () => {
 });
 When('FCF-0290 click on New button in Discussion prompts for this session', async () => {
     await delay(5000);
-    element(by.xpath("/html/body/div[5]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/manage-prompts-view/div/div[1]/div[2]/a")).click();
+    element(by.xpath("/html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/manage-prompts-view/div/div[1]/div[2]/a")).click();
     await delay(10000);
-    element(by.xpath("/html/body/div[6]/div/div/div[2]/form/div[1]/ng-quill-editor/div/div/div[1]")).sendKeys('Test Discussion prompt');
+    element(by.xpath("/html/body/div[4]/div/div/div[2]/form/div[1]/ng-quill-editor/div/div/div[1]")).sendKeys('Test Discussion prompt');
     await delay(5000);
-    element(by.xpath("/html/body/div[6]/div/div/div[2]/form/input")).click();
+    element(by.xpath("/html/body/div[4]/div/div/div[2]/form/input")).click();
     await delay(5000);
 });
 Then('FCF-0290 Click on Visit group', async () => {
-    await delay(5000);
-    browser.executeScript('window.scrollTo(1383,106)');
     await delay(10000);
     element(by.xpath("/html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/promo-unit/div/div[1]/a")).click();
     await delay(10000);
