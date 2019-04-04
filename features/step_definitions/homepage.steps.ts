@@ -212,8 +212,6 @@ defineSupportCode(function ({Given, Then, When}) {
     Then('FCF-0090 Delete feature', async () =>{
         element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div/a[2]")).click();
         await delay(4000); 
-        await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div/div/div[2]/div/div/p[2]/a"))).to.eventually.exist;
-        await delay(2000);
         element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div/div/div[2]/div/div/p[2]/a")).click();
         await delay(4000);
   });
