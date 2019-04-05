@@ -1219,7 +1219,7 @@ When('FCF-0290 click on New button in Discussion prompts for this session', asyn
 });
 Then('FCF-0290 Click on Visit group', async () => {
     await delay(10000);
-    element(by.xpath("/html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/promo-unit/div/div[1]/a")).click();
+    element(by.xpath("/html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[2]/promo-unit-dashboard-wrapper/div/div/promo-unit/div/div[1]/a")).click();
     await delay(10000);
 });
 When('FCF-0180 Click on session', async () => {
