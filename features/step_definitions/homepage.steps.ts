@@ -13,7 +13,6 @@ import { async } from 'q';
 import { Z_DEFAULT_STRATEGY } from 'zlib';
 
 
-
 defineSupportCode(function ({Given, Then, When}) {
     function delay(ms: number) {
         return new Promise(resolve => setTimeout(resolve, ms));
@@ -302,7 +301,7 @@ Then('FCF-0130 click on managesessions and create a session using Youtube' , asy
     await delay(5000);
     element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-type-selector/div/div/div[2]/div[1]/div[2]/div")).click();
     await delay(5000);
-    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-embed/div[2]/div[2]/div/textarea")).sendKeys('<iframe width="560" height="315" src="https://www.youtube.com/embed/uHUTbq-j0UU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+    element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/div/div[2]/div/manage-sessions-view/form/media-embed/div[2]/div[2]/div/textarea")).sendKeys('<iframe width="560" height="315" src="https://www.youtube.com/embed/gkgGN54h6vg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
     await delay(10000);
 });
 Then('FCF-0140 Click on manage sessions' , async () => {
