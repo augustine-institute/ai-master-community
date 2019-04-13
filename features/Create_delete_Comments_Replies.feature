@@ -8,8 +8,13 @@ Feature: This file will test the Formed Community to Create delete Comments Repl
 
   # from at document
   Scenario: Cretae and delete comments and replies
-  When FCF-0010 navigate to community page
-  Then FCF-0010 Enter Parish user name and password
+  When navigate to market page
+  Then click on ondemand subscription
+  Then VR-0020 click on checkout button
+  Then PBP-0070 Enter Details in create Account
+  Then VR-0030 Enter Payment Method
+  When VR-0050 order conformation is displayed
+  When VR-0060 Enter organization information
   Then FCF-0020 Feature and group tab in dashboard menu
   When FCF-0030 naviagte to listen link and click on audio books
   Then FCF-0040 click on image in audio books
