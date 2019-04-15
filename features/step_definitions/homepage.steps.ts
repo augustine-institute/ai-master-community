@@ -601,9 +601,9 @@ Then('FCF-0110 Navigate to study link and click on Faith Formation' , async () =
 });
 Then('FCF-0120 click on create feature and discussion group', async () => {
     await delay(2000);
-    await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/div/div[2]/div[1]/custom-content-creator/div/div/modal-link/a/span"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/div/div[3]/div[1]/custom-content-creator/div/div/modal-link/a/span"))).to.eventually.exist;
     await delay(2000);
-    element(by.xpath(".//*[@id='scroll-top']/div/div/div[2]/div[1]/custom-content-creator/div/div/modal-link/a/span")).click();
+    element(by.xpath(".//*[@id='scroll-top']/div/div/div[3]/div[1]/custom-content-creator/div/div/modal-link/a/span")).click();
     await delay(10000);
 })
 When('FCF-0110 naviagte to watch link and click on movies', async () => {
