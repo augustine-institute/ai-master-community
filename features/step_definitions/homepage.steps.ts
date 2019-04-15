@@ -283,10 +283,8 @@ When('FCF-0160 click on View group', async () =>{
     await delay(10000);
 });
 Then('FCF-0130 click on edit button' , async () => {
-    await delay(15000);
-    browser.navigate().refresh();
     await delay(25000);
-    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div/modal-link/a/span")).click();
+    element(by.xpath("//*[@id='workspace']/div[2]/div/div/promo-unit-dashboard-wrapper/div/div/div/div/div[2]/modal-link/a/span")).click();
     await delay(15000);
 });
 Then('FCF-0130 click on managesessions and create a session using Youtube' , async () => {
@@ -1218,11 +1216,12 @@ When('FCF-0290 click on New button in Discussion prompts for this session', asyn
     await delay(5000);
 });
 Then('FCF-0290 Click on Visit group', async () => {
+	await delay(5000);
+    element(by.xpath("//*[@id='workspace']/div[2]/div/div/promo-unit-dashboard-wrapper/div/div/div/div/a")).click();
 	await delay(10000);
-	browser.executeScript('window.scrollTo(1211, 601)');
-    await delay(5000);
-    element(by.xpath("//*[@id='workspace']/div[2]/div/div/promo-unit-dashboard-wrapper/div/div/promo-unit/div/div[1]/a")).click();
-    await delay(10000);
+	element(by.xpath(".//*[@id='header']/div/div/div/div/global-nav/ul/li[2]/a")).click();
+	await delay(15000);
+	element(by.xpath("//*[@id='community-tabs']/div/div[1]/div[2]/custom-content-wrapper/div/div/div/promo-unit/div/div[1]/a")).click();
 });
 When('FCF-0180 Click on session', async () => {
     await delay(5000);
