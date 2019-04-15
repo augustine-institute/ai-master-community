@@ -17,10 +17,10 @@ Feature: CMM-FCF-005-Formed Community
   Then FCF-0120 click on Discussion group
   Then FCF-0120 Click on create discussion group
   Then FCF-0120 click on View group
-  Then FCF-0130 click on edit button
+  Then FCF-0130 click on Edit button
   Then FCF-0130 click on managesessions and create a session using Youtube
   When FCF-0130 click on save button
-  Then FCF-0130 click on edit button
+  Then FCF-0130 click on Edit button
   Then FCF-0140 create another session
   Then FCF-0140 click on dropdown from manage sessions
   Then FCF-0140 Manage session  dropdown is displayed
