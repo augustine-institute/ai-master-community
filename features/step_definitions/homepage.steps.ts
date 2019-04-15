@@ -287,6 +287,12 @@ Then('FCF-0130 click on edit button' , async () => {
     element(by.xpath("//*[@id='workspace']/div[2]/div/div/promo-unit-dashboard-wrapper/div/div/div/div/div[2]/modal-link/a/span")).click();
     await delay(15000);
 });
+Then('FCF-0130 click on Edit button' , async () => {
+    browser.navigate().refresh()
+    await delay(15000);
+    element(by.xpath("/html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div[2]/modal-link/a")).click();
+    await delay(15000);
+});
 Then('FCF-0130 click on managesessions and create a session using Youtube' , async () => {
     element(by.xpath("html/body/div[3]/div/div/promo-unit-modal/div[3]/div/create-group-view/div[1]/ul/li[2]/a/tab-heading/div/h3")).click();
     await delay(10000);
@@ -601,7 +607,7 @@ Then('FCF-0110 Navigate to study link and click on Faith Formation' , async () =
 });
 Then('FCF-0120 click on create feature and discussion group', async () => {
     await delay(2000);
-    await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/div/div[3]/div[1]/custom-content-creator/div/div/modal-link/a/span"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("//*[@id='scroll-top']/div/div/div[3]/div[1]/custom-content-creator/div/div/modal-link/a/span"))).to.eventually.exist;
     await delay(2000);
     element(by.xpath(".//*[@id='scroll-top']/div/div/div[3]/div[1]/custom-content-creator/div/div/modal-link/a/span")).click();
     await delay(10000);
