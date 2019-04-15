@@ -17,9 +17,9 @@ Feature: CMM-FCF-004-Formed Community
   Then FCF-0120 click on Discussion group
   Then FCF-0120 Click on create discussion group
   Then FCF-0120 click on View group
-  Then FCF-0130 click on edit button
+  Then FCF-0130 click on Edit button
   Then FCF-0140 create a session using Vimeo
   When FCF-0130 click on save button
-  Then FCF-0130 click on edit button
+  Then FCF-0130 click on Edit button
   Then FCF-0140 create a session using Audio
   Then FCF-0140 click on save button and cencel button
