@@ -139,11 +139,10 @@ defineSupportCode(function ({Given, Then, When}) {
         await delay(2000);
         await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/div[2]/div/div[2]/a[2]"))).to.eventually.exist;
         await delay(2000);
-        element(by.xpath("html/body/div[3]/div/div/div[2]/div/div[2]/a[1]")).click();
-        await delay(25000);
   });
    When('FCF-0070 Move a feature into the Published', async () =>{
-        element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/a/i")).click();
+        await delay(10000);   
+        element(by.xpath("/html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[2]/promo-unit-dashboard-wrapper/div/div/div/div/a")).click();
         await delay(10000);
         element(by.xpath(".//*[@id='header']/div/div/div/div/global-nav/ul/li[2]/a")).click();
         await delay(20000);
@@ -209,9 +208,11 @@ defineSupportCode(function ({Given, Then, When}) {
         await delay(15000);
     });
     Then('FCF-0090 Delete feature', async () =>{
-        element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div/a[2]")).click();
+        browser.navigate().refresh();
+        await delay(10000);
+        element(by.xpath("/html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div[2]/a[2]")).click();
         await delay(4000); 
-        element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div/div/div[2]/div/div/p[2]/a")).click();
+        element(by.xpath("/html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div[2]/div/div[2]/div/div/p[2]/a")).click();
         await delay(4000);
   });
    Then('FCF-0120 click on Discussion group' , async () => {
