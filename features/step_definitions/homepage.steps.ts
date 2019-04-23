@@ -137,8 +137,10 @@ defineSupportCode(function ({Given, Then, When}) {
    Then('FCF-0060 click on view community feature', async () => {
         await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/div[2]/div/div[2]/a[1]"))).to.eventually.exist;
         await delay(2000);
-        await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/div[2]/div/div[2]/a[2]"))).to.eventually.exist;
-        await delay(2000);
+        browser.executeScript('window.scrollTo(685, 216)');
+        await delay(15000);
+        element(by.xpath("html/body/div[3]/div/div/div[2]/div/div[2]/a[1]")).click();
+        await delay(5000);
   });
    When('FCF-0070 Move a feature into the Published', async () =>{
         await delay(10000);   
@@ -584,7 +586,6 @@ Then('click on logout button from parish user', async  () => {
     await delay(10000);
 });
 Then('FCF-0100 naviagte to read link and click on Nonfiction' , async () => {
-    await delay(20000);
     browser.actions().mouseMove(element(by.xpath("//a[@href='/read']"))).perform();
     await delay(5000);
     element(by.xpath(".//*[@id='header']/div/div[3]/div/main-nav/ul/li[4]/segmented-menu-item/div/segmented-links/div/div[2]/a")).click();
