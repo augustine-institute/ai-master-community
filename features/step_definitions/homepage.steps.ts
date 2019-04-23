@@ -584,6 +584,7 @@ Then('click on logout button from parish user', async  () => {
     await delay(10000);
 });
 Then('FCF-0100 naviagte to read link and click on Nonfiction' , async () => {
+    await delay(20000);
     browser.actions().mouseMove(element(by.xpath("//a[@href='/read']"))).perform();
     await delay(5000);
     element(by.xpath(".//*[@id='header']/div/div[3]/div/main-nav/ul/li[4]/segmented-menu-item/div/segmented-links/div/div[2]/a")).click();
@@ -861,9 +862,7 @@ Then('REPO-014 Card Description Overflow', async () => {
     await delay(10000);
 })
 Then('REPO-021 Click on Submit As Template', async () => {
-    await delay(10000);
-    browser.executeScript('window.scrollTo(683,899)');
-    await delay(5000);
+    await delay(20000);
     element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[1]/div[2]/div/ul/li[1]/promo-unit-dashboard-wrapper/div/div/div/div/div[2]/a[3]")).click();
     await delay(15000);
     element(by.xpath("html/body/div[3]/div/div/div[4]/input")).click();
