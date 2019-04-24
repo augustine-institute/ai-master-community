@@ -166,7 +166,7 @@ defineSupportCode(function ({Given, Then, When}) {
     await delay(10000);
     element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/ul/li[2]")).click();
     await delay(15000);
-});
+   });
     Then('FCF-0080 move a published feature into unpublished list', async () => {
         await delay(10000);
         await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/div[1]/div[2]/ul/li[3]/promo-unit-dashboard-wrapper/div/div/div/div/a"))).to.eventually.exist;
@@ -586,10 +586,11 @@ Then('click on logout button from parish user', async  () => {
     await delay(10000);
 });
 Then('FCF-0100 naviagte to read link and click on Nonfiction' , async () => {
+    await delay(10000);
     browser.actions().mouseMove(element(by.xpath("//a[@href='/read']"))).perform();
     await delay(5000);
     element(by.xpath(".//*[@id='header']/div/div[3]/div/main-nav/ul/li[4]/segmented-menu-item/div/segmented-links/div/div[2]/a")).click();
-    await delay(5000);
+    await delay(15000);
     element(by.xpath("//*[@id='scroll-top']/div/segmented-page/div/div[3]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[11]/div/a/img")).click();
     await delay(10000);
 });
