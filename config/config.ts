@@ -8,7 +8,7 @@ export let config: Config = {
     rootElement: 'body',
   // seleniumAddress: 'http://localhost:4444/wd/hub',
 
-    SELENIUM_PROMISE_MANAGER: false,
+    SELENIUM_PROMISE_MANAGER: true,
     
     // for windows:
     //chromeOnly: true, 
