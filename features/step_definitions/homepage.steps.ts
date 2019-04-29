@@ -589,9 +589,9 @@ Then('FCF-0100 naviagte to read link and click on Nonfiction' , async () => {
     await delay(10000);
     browser.actions().mouseMove(element(by.xpath("//a[@href='/read']"))).perform();
     await delay(5000);
-    element(by.xpath(".//*[@id='header']/div/div[3]/div/main-nav/ul/li[4]/segmented-menu-item/div/segmented-links/div/div[2]/a")).click();
+    element(by.xpath(".//*[@id='header']/div/div[3]/div/main-nav/ul/li[4]/segmented-menu-item/div/segmented-links/div/div[1]/a")).click();
     await delay(15000);
-    element(by.xpath("//*[@id='scroll-top']/div/segmented-page/div/div[3]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[11]/div/a/img")).click();
+    element(by.xpath("//*[@id='scroll-top']/div/segmented-page/div/div[1]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[11]/div/a/img")).click();
     await delay(10000);
 });
 Then('FCF-0100 click on create feature and discussion group', async () => {
