@@ -99,18 +99,18 @@ defineSupportCode(function ({Given, Then, When}) {
     });
     When('FCF-0030 naviagte to listen link and click on audio books' , async () =>{
         await delay(20000);
-        browser.actions().mouseMove(element(by.xpath(".//*[@href='/listen']"))).perform();
+        browser.actions().mouseMove(element(by.xpath(".//*[@href='/catholic-audio']"))).perform();
         await delay(5000);
-        element(by.xpath(".//*[@id='header']/div/div[3]/div/main-nav/ul/li[3]/segmented-menu-item/div/segmented-links/div/div[5]/a")).click();
+        element(by.xpath("//*[@id='header']/div/div[3]/div/main-nav/ul/li[3]/segmented-menu-item/div/segmented-links/div/div[4]/a")).click();
         await delay(5000);
-		element(by.xpath(".//*[@id='header']/div/div[3]/div/main-nav/ul/li[3]/segmented-menu-item/div/segmented-links/div/div[5]/a")).click();
+		element(by.xpath("//*[@id='header']/div/div[3]/div/main-nav/ul/li[3]/segmented-menu-item/div/segmented-links/div/div[4]/a")).click();
 		await delay(10000);
     });
     Then('FCF-0040 click on image in audio books' , async () => {
         await delay(25000);
-        await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/segmented-page/div/div[5]/segment/div[3]/div/stripe/div/div/div[2]/div/div/div/div/div[8]/div/a/img"))).to.eventually.exist;
+        await expect(browser.findElement(by.xpath("//*[@id='scroll-top']/div/segmented-page/div/div[4]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[8]/div/a/img"))).to.eventually.exist;
         await delay(2000);
-        element(by.xpath(".//*[@id='scroll-top']/div/segmented-page/div/div[5]/segment/div[3]/div/stripe/div/div/div[2]/div/div/div/div/div[8]/div/a/img")).click();
+        element(by.xpath("//*[@id='scroll-top']/div/segmented-page/div/div[4]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[8]/div/a/img")).click();
         await delay(20000);
     });
     Then('FCF-0050 click on create feature and discussion group', async () => {
@@ -587,9 +587,9 @@ Then('click on logout button from parish user', async  () => {
 });
 Then('FCF-0100 naviagte to read link and click on Nonfiction' , async () => {
     await delay(10000);
-    browser.actions().mouseMove(element(by.xpath("//a[@href='/read']"))).perform();
+    browser.actions().mouseMove(element(by.xpath("//a[@href='/catholic-books']"))).perform();
     await delay(5000);
-    element(by.xpath(".//*[@id='header']/div/div[3]/div/main-nav/ul/li[4]/segmented-menu-item/div/segmented-links/div/div[1]/a")).click();
+    element(by.xpath("//a[@href='/catholic-books?linkId=read-nonfiction']")).click();
     await delay(15000);
     element(by.xpath("//*[@id='scroll-top']/div/segmented-page/div/div[1]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[11]/div/a/img")).click();
     await delay(10000);
@@ -602,11 +602,11 @@ Then('FCF-0100 click on create feature and discussion group', async () => {
     await delay(10000);
 });
 Then('FCF-0110 Navigate to study link and click on Faith Formation' , async () => {
-    browser.actions().mouseMove(element(by.xpath("//a[@href='/study']"))).perform();
+    browser.actions().mouseMove(element(by.xpath("//a[@href='/catholic-programs']"))).perform();
     await delay(5000);
-    element(by.xpath(".//*[@id='header']/div/div[3]/div/main-nav/ul/li[1]/segmented-menu-item/div/segmented-links/div/div[3]/a")).click();
+    element(by.xpath("//a[@href='/catholic-programs?linkId=study-faith-formation']")).click();
     await delay(20000);
-    element(by.xpath(".//*[@id='scroll-top']/div/segmented-page/div/div[3]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[6]/div/a/img")).click();
+    element(by.xpath("//*[@id='scroll-top']/div/segmented-page/div/div[3]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[6]/div/a/img")).click();
     await delay(15000);
 });
 Then('FCF-0120 click on create feature and discussion group', async () => {
@@ -618,13 +618,13 @@ Then('FCF-0120 click on create feature and discussion group', async () => {
 })
 When('FCF-0110 naviagte to watch link and click on movies', async () => {
     await delay(30000);
-    browser.actions().mouseMove(element(by.xpath(".//*[@id='header']/div/div[3]/div/main-nav/ul/li[2]/a"))).perform();
+    browser.actions().mouseMove(element(by.xpath("//a[@href='/catholic-movies']"))).perform();
     await delay(10000);
-    element(by.xpath(".//*[@id='header']/div/div[3]/div/main-nav/ul/li[2]/segmented-menu-item/div/segmented-links/div/div[2]/a")).click();
+    element(by.xpath("//a[@href='/catholic-movies?linkId=watch-movies']")).click();
     await delay(20000);
-    await expect(browser.findElement(by.xpath(".//*[@id='scroll-top']/div/segmented-page/div/div[2]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[5]/div/a/img"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath("//*[@id='scroll-top']/div/segmented-page/div/div[1]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[6]/div/a/img"))).to.eventually.exist;
     await delay(2000);
-    element(by.xpath(".//*[@id='scroll-top']/div/segmented-page/div/div[2]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[5]/div/a/img")).click();
+    element(by.xpath("//*[@id='scroll-top']/div/segmented-page/div/div[1]/segment/div[2]/div/stripe/div/div/div[2]/div/div/div/div/div[6]/div/a/img")).click();
     await delay(20000);
 });
 Then('FCF-0110 click on create feature and discussion group', async () => {
