@@ -16,16 +16,19 @@ Feature: CMM-FCF-003-Formed Community
   Then FCF-0060 create feature contant
   Then FCF-0060 click on create community feature
   Then FCF-0060 click on view community feature
+  Given I navigate to "/"
   When FCF-0100 naviagte to read link and click on Nonfiction
   Then FCF-0100 click on create feature and discussion group
   Then FCF-0060 create feature contant
   Then FCF-0060 click on create community feature
   Then FCF-0060 click on view community feature
+  Given I navigate to "/"
   When FCF-0110 naviagte to watch link and click on movies
   Then FCF-0110 click on create feature and discussion group
   Then FCF-0060 create feature contant
   Then FCF-0060 click on create community feature
   Then FCF-0060 click on view community feature
+  Given I navigate to "/"
   Then FCF-0110 Navigate to study link and click on Faith Formation
   Then FCF-0120 click on create feature and discussion group
   Then FCF-0060 create feature contant
