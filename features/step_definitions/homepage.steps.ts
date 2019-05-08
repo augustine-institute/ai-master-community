@@ -255,7 +255,7 @@ defineSupportCode(function ({Given, Then, When}) {
         await expect(browser.findElement(by.xpath("html/body/div[3]/div/div/div[2]/div/div[2]/a[2]"))).to.eventually.exist;
         await delay(2000);
         element(by.xpath("html/body/div[3]/div/div/div[2]/div/div[2]/a[1]")).click();
-        await delay(4000);
+        await delay(15000);
    });
 Then('FCF-0130 Edit the group' , async () => {
 	await delay(5000);
