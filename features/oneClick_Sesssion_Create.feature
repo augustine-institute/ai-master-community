@@ -16,6 +16,7 @@ Feature: CMM-FCF-006-Formed Community
   Then FCF-0160 click on Add session to existing discussion group
   Then FCF-0160 select group and click on Addsession
   When FCF-0160 click on View group
+  Given I navigate to "/"
   When FCF-0030 naviagte to listen link and click on audio books
   Then FCF-0040 click on image in audio books
   Then FCF-0050 click on create feature and discussion group
