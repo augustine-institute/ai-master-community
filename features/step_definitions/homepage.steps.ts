@@ -1204,19 +1204,17 @@ Then('REPO-007 Tags are displayed', async () => {
 });
 When('REPO-008 Select one Tag', async () => {
     await delay(5000);
-    element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[2]/div/div/a[23]")).click();
+    element(by.xpath("//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[2]/div/div/a[2]")).click();
     await delay(10000); 
 });
 Then('REPO-010 Select Second Tag in Card', async () => {
     await delay(5000);
-    element(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li[1]/content-template/div[2]/div[3]/div/span/span[1]/a")).click();
-    await delay(5000);
-    element(by.xpath(".//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[2]/div/div/a[23]")).click();
+    element(by.xpath("//*[@id='scroll-top']/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[2]/div/div/a[23]")).click();
     await delay(8000); 
 });
 Then('REPO-010 Related Tags Cards are displayed', async () => {
     await delay(5000);
-    await expect(browser.findElement(by.xpath("html/body/main/div[1]/div[1]/div/div[2]/div/div/div[2]/custom-content-tab/div/div/uib-accordion/div/div[3]/div[2]/div/content-template-list/div[3]/div/ul/li/content-template/div[2]/div[2]/div[2]/p"))).to.eventually.exist;
+    await expect(browser.findElement(by.xpath(".//*[@title='Sacraments']"))).to.eventually.exist;
     await delay(2000);
 });
 Then('REPO-011 Clear Tags are displayed', async () => {
